@@ -1,0 +1,15 @@
+header figure img {
+    width: 150px; 
+    height: auto;
+    display: inline-block;
+    float: left;
+    margin-right: 100px; 
+  }
+  
+  nav li {
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    line-height: 62px;
+  }
+  
