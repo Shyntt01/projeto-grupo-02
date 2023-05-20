@@ -10,61 +10,60 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>Roteiro do Sabor</title>
   </head>
   <body>
-    <header>
-      <iframe src="header.html" frameborder="0" scrolling="no"></iframe>
-    </header>
+    <header></header>
     <main>
-      <section>
-        <h2>CONTATO</h2>
-        <form method="post" action="enviar.php">
-          <label for="nome"></label>
-          <input
-            type="text"
-            id="nome"
-            name="nome"
-            required
-            placeholder="Nome"
-          /><br /><br />
+      <div class="container">
+        <section class="contatos">
+          <h2>CONTATO</h2>
+          <form method="post" action="enviar.php">
+            <label for="nome"></label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              required
+              placeholder="Nome"
+            /><br /><br />
 
-          <label for="email"></label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            placeholder="E-mail"
-          /><br /><br />
+            <label for="email"></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="E-mail"
+            /><br /><br />
 
-          <label for="telefone"></label>
-          <input
-            type="tel"
-            id="telefone"
-            name="telefone"
-            placeholder="Telefone"
-          /><br /><br />
+            <label for="telefone"></label>
+            <input
+              type="tel"
+              id="telefone"
+              name="telefone"
+              placeholder="Telefone"
+            /><br /><br />
 
-          <label for="mensagem"></label>
-          <textarea
-            id="mensagem"
-            name="mensagem"
-            required
-            placeholder="Digite aqui o assunto que você gostaria de mandar..."
-          ></textarea
-          ><br /><br />
+            <label for="mensagem"></label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              required
+              placeholder="Digite aqui o assunto que você gostaria de mandar..."
+            ></textarea
+            ><br /><br />
 
-          <input type="submit" value="Enviar" />
-        </form>
-      </section>
+            <button type="submit" value="Enviar" id="botao">ENVIAR</button>
+          </form>
+        </section>
+      </div>
       <br /><br />
 
       <section>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1167.7960162272436!2d-51.22203901708705!3d-30.023785807465323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197909f09688b9%3A0x11bc4ae7b1b68ede!2sHotel%20Ibis%20Budget%20Porto%20Alegre!5e0!3m2!1spt-BR!2sbr!4v1682900231434!5m2!1spt-BR!2sbr"
-          width="600"
-          height="450"
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
@@ -72,8 +71,7 @@
         ></iframe>
       </section>
     </main>
-    <footer>
-      <iframe src="footer.html" frameborder="0" scrolling="no"></iframe>
-    </footer>
+    <footer></footer>
+    <script src="header.js"></script>
   </body>
 </html>
