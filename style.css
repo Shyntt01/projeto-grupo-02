@@ -1,0 +1,150 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1246px;
+  margin: 0 auto;
+  padding: 0px 15px;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 100vh;
+  max-width: 1200px; */
+}
+
+header {
+  background: rgba(217, 217, 217, 1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  /* justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1; */
+}
+
+section h2 {
+  font-size: 30pt;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 11rem;
+}
+
+iframe {
+  height: 440px;
+  width: 100%;
+}
+
+form {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+form input,
+form textarea {
+  font-size: 11pt;
+  border: none;
+  width: 650px;
+  height: 62px;
+  left: 238px;
+  top: 342px;
+  background: #f2f2f2;
+  border-radius: 50px;
+}
+
+form textarea {
+  height: 224px;
+}
+
+form button {
+  width: 234px;
+  height: 62px;
+  left: 553px;
+  top: 876px;
+  padding: 10px 20px;
+  background-color: #0a0a0a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  margin-bottom: 5rem;
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+#nome,
+#email,
+#telefone,
+#mensagem {
+  padding: 30px;
+  color: #000000;
+}
+
+header figure img {
+  width: 150px;
+  height: auto;
+  margin-right: 100px;
+}
+
+nav li {
+  padding: 30px;
+  display: inline-block;
+  /* text-align: center; */
+  line-height: 62px;
+  font-size: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+}
+
+.menu-mobile {
+  display: none;
+}
+@media (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .menu-mobile {
+    display: block;
+  }
+}
+nav ul li a:hover {
+  background-color: #333333;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.menu {
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+}
