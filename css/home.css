@@ -1,19 +1,31 @@
-*{color: rgb(255, 255, 255);
+*{
     margin: 0;
     padding: 0;
-    width: 1440px;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 
 .initialText{
+    width: 1440px;
     height: 635px;
-    background-color: #7d1c1c;
+    color:#ffffff;
+    background-color: #7d1c1ce4;
     font-size: 25px;
     font-weight: 550;
 }
 
 .mainContainer{
+    width: 1440px;
     height: 1135px;
-    border: 2px solid black;
+    background-color: gray;
     }
+.title{
+    height: 60px;
+    font-size: 60px;
+};
+
+.input{
+    height: 100px;
+    width: 1440px;
+
+}
