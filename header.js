@@ -25,6 +25,6 @@ cabecalho.innerHTML = `
  `;
 
 //Etapa 3: Adicionar o elemento article no elemento main do DOM
-const mainElement = document.querySelector("header");
+const headerElement = document.querySelector("header");
 
-mainElement.appendChild(cabecalho);
+headerElement.appendChild(cabecalho);
