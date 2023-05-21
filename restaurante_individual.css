@@ -1,17 +1,19 @@
+
 .parent {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 200px
   }
   
-  .imagem1 {
+.imagem1 {
     flex-basis: 33.33%;
     margin: 0;
     width: 5%;
     height: 5%;
   }
   
-  .imagem2 {
+.imagem2 {
     flex-basis: 33.33%;
     margin: 0;
     width: 5%;
@@ -25,14 +27,3 @@
       clear: left;
     }
 
-.parent figure {
-        margin: 0;
-        text-align: center;
-      }
-      
-.parent figcaption {
-        font-size: 14px;
-        font-weight: bold;
-        margin-top: 5px;
-      }
-  
