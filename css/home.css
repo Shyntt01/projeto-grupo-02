@@ -1,0 +1,19 @@
+*{color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    width: 1440px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.initialText{
+    height: 635px;
+    background-color: #7d1c1c;
+    font-size: 25px;
+    font-weight: 550;
+}
+
+.mainContainer{
+    height: 1135px;
+    border: 2px solid black;
+    }
