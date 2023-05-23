@@ -151,39 +151,5 @@ nav ul li a:hover {
 
  /* "Aqui começa o css da página index.html" */
 
-.home-initialText{
-  width: 100%;
-  height: 635px;
-  margin: 7.65rem 0 0 0;
-  padding: 15rem 3rem 15rem  3rem;
-  color:#e0dfdf;
-  background-color: #7d1c1ce4;
-  background-image: url(./assets/img/feijuca-1024x685.jpg); 
-    opacity: 0.6;
-  font-size: 20px;
-  
-}
-@media (max-width: 1100px){
-  .home-initialText{
-    font-size: 16px;
-    height: 635px;
-  }}
-@media (max-width: 980px){
-    .home-initialText{
-      font-size: 14px;
-      height: 635px;
-    }
-}
 
- .home-mainContainer{
-  width: 100%;
-  height: 1135px;
-  background-color: #645f5f1b;
-  }
-.home-mainContainer .title{
-  height: 60px;
-  text-align: center;
-  padding: 10px 10px;
-  color:#000000;
-}; 
 
