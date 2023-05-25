@@ -10,8 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="./css/home.css"> -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+    <script src="./js/carousel.js" defer></script>
     <title>Roteiro do Sabor</title>
   </head>
   <body>
@@ -19,23 +21,25 @@
      
     </header>
     <main>
-      <section>
-        <div class="home-initialText">
-            <p>
-              Descubra os segredos culinários das diferentes regiões do Brasil em uma jornada gastronômica única. Bem-vindo ao Roteiro do Sabor, o seu guia para explorar os sabores autênticos e as receitas tradicionais que fazem da culinária brasileira uma das mais ricas do mundo.
-            </p>
-            <br>
-            <p>
-              Prepare-se para desbravar a riqueza cultural e gastronômica do Brasil, experimentando desde uma suculenta moqueca baiana até um autêntico churrasco gaúcho. E não se preocupe se a cozinha não é o seu forte, pois compartilharemos as receitas autênticas e os segredos transmitidos de geração em geração, para que você possa reproduzir essas delícias em sua própria casa.
-            </p>
-            <br>
-            <p>
-              Venha conosco nesta jornada deliciosa e deixe que o sabor do Brasil desperte todos os seus sentidos. Explore o Roteiro do Sabor, mergulhe na cultura e nos sabores das diferentes regiões do país e desfrute de uma experiência gastronômica inesquecível. Prepare-se para uma viagem de descobertas culinárias e deixe-se encantar pelos pratos típicos que contam a história e a tradição do Brasil. Delicie-se com cada mordida, mergulhe em novos sabores e embarque nessa aventura gastronômica conosco!
-            </p>
+       <article class="homeArticle">
+        <div id="initialText">
+          <p>
+            Descubra os segredos culinários das diferentes regiões do Brasil em uma jornada gastronômica única. Bem-vindo ao Roteiro do Sabor, o seu guia para explorar os sabores autênticos e as receitas tradicionais que fazem da culinária brasileira uma das mais ricas do mundo.
+            Prepare-se para desbravar a riqueza cultural e gastronômica do Brasil, experimentando desde uma suculenta moqueca baiana até um autêntico churrasco gaúcho.     </p>
+          <br>
+          <br>
+          <p>
+            E não se preocupe se a cozinha não é o seu forte, pois compartilharemos as receitas autênticas e os segredos transmitidos de geração em geração, para que você possa reproduzir essas delícias em sua própria casa.
+          </p>
+          <br>
+          <p>
+            Venha conosco nesta jornada deliciosa e deixe que o sabor do Brasil desperte todos os seus sentidos. Explore o Roteiro do Sabor, mergulhe na cultura e nos sabores das diferentes regiões do país e desfrute de uma experiência gastronômica inesquecível. Prepare-se para uma viagem de descobertas culinárias e deixe-se encantar pelos pratos típicos que contam a história e a tradição do Brasil. Delicie-se com cada mordida, mergulhe em novos sabores e embarque nessa aventura gastronômica conosco!
+          </p>
         </div>
-      </section>
+       </article>
+
       <section class="home-mainContainer">
-        <h1 class="title">
+        <h1 class="home-title">
           Sobre Nós
         </h1>
         <br>
@@ -44,47 +48,27 @@
         </p>
         <br>
         <div>
-          <label for="Search">input</label>
-          <input class="home-input" type="search">
+          <label for="Search"></label>
+          <input class="home-input" type="Search">
         </div>
-
-        <figure>
-          <img src="" alt="img">
-        </figure>
-        <h3>
-          Nome do restaurante
-        </h3>
-        <p>
-          Breve descrição do restaurante
-        </p>
-        <div>
-          Avaliação 
+        
+        <div class="carousel">
+          <div class="carousel-container">
+            <img src="./assets/Fotos restaurante individual/Sobremesa 1.png" alt="Imagem 1">
+            <img src="./assets/Fotos restaurante individual/Sobremesa 2.png" alt="Imagem 2">
+            <img src="./assets/Fotos restaurante individual/Sobremesa 3.png" alt="Imagem 3">
+            <img src="./assets/Fotos restaurante individual/Sobremesa 1.png" alt="Imagem 4">
+            <img src="./assets/Fotos restaurante individual/Sobremesa 2.png" alt="Imagem 5">
+            <img src="./assets/Fotos restaurante individual/Sobremesa 3.png" alt="Imagem 6">
+            <img src="./assets/Fotos restaurante individual/Sobremesa 1.png" alt="Imagem 7">
+            <img src="./assets/Fotos restaurante individual/Sobremesa 2.png" alt="Imagem 8">
+            <img src="./assets/Fotos restaurante individual/Sobremesa 3.png" alt="Imagem 9">
+            <img src="./assets/Fotos restaurante individual/Sobremesa 2.png" alt="Imagem 10">
+          </div>
+          <button class="carousel-prev">Anterior</button>
+          <button class="carousel-next">Próximo</button>
         </div>
-        <figure>
-          <img src="" alt="img">
-        </figure>
-        <h3>
-          Nome do restaurante
-        </h3>
-        <p>
-          Breve descrição do restaurante
-        </p>
-        <div>
-          Avaliação 
-        </div>
-
-        <figure>
-          <img src="" alt="img">
-        </figure>
-        <h3>
-          Nome do restaurante
-        </h3>
-        <p>
-          Breve descrição do restaurante
-        </p>
-        <div>
-          Avaliação 
-        </div>
+      
       </section>
 
       <section>
