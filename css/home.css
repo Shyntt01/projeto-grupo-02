@@ -34,6 +34,28 @@
   font-weight: 500;
   padding: 0 9vh;
 };
+
+
 .home-input{ border: 2px solid red;
+
+}
+
+.home-receitas-listas{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 44vh;
+  margin-top: 3vh;
+ background-color: rgb(130, 135, 133);
+}
+.home-receitas-listas h1{
+  display: flex;
+  width: 100%;
+  height: 20vh; 
+  align-items: center;
+  justify-content: center;
+  background-color: #7D1C1C;
+  color: whitesmoke;
+  font-size: 50pt;
 
 }
