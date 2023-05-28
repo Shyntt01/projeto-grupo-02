@@ -1,9 +1,9 @@
 .carousel-container {
   display: flex;
   position: relative; /* Adiciona posicionamento relativo para que os botões possam ser posicionados de forma absoluta */
-  width: 1440px;
-  overflow: visible;
-  gap: 30px; /* Adiciona um espaçamento de 100 pixels entre os itens do carrossel */
+  width: 100%;
+  overflow: initial;
+  gap: 30px; /* Adiciona um espaçamento de 30 pixels entre os itens do carrossel */
   transition: transform 0.3s ease; /* Adiciona uma transição suave */
 }
 

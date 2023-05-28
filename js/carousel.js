@@ -12,7 +12,7 @@ function goToSlide(index) {
 }
 
 function goToNextSlide() {
-  if (currentIndex < 9) {
+  if (currentIndex < 5) {
     goToSlide(currentIndex + 1);
   } else {
     goToSlide(0);
@@ -23,7 +23,7 @@ function goToPrevSlide() {
   if (currentIndex > 0) {
     goToSlide(currentIndex - 1);
   } else {
-    goToSlide(9);
+    goToSlide(5);
   }
 }
 
