@@ -127,8 +127,8 @@ nav ul li a {
 .menu-mobile {
   display: none;
 }
-@media (max-width: 800px) {
-  .menu {
+@media (max-width: 1000px) {
+  .lista {
     display: none;
   }
   .menu-mobile {
@@ -148,3 +148,5 @@ nav ul li a:hover {
   width: 100%;
   left: 0;
 }
+
+/* "Aqui começa o css da página index.html" */
