@@ -1,26 +1,27 @@
 .carousel-container {
   display: flex;
   position: relative; /* Adiciona posicionamento relativo para que os botões possam ser posicionados de forma absoluta */
-  width: 1440px;
+  width: 100%;
   overflow: visible;
-  gap: 30px; /* Adiciona um espaçamento de 100 pixels entre os itens do carrossel */
-  transition: transform 0.3s ease; /* Adiciona uma transição suave */
+  gap: 60px; /* Adiciona um espaçamento de 30 pixels entre os itens do carrossel */
+  transition: transform 0.4s ease; /* Adiciona uma transição suave */
 }
 
 .carousel img {
-  max-width: 50%; /* Define a largura máxima das imagens como 100% do tamanho do contêiner */
+  max-width: 600px;
+  max-height: 400px; /* Define a largura máxima das imagens como 100% do tamanho do contêiner */
   height: auto; /* Mantém a proporção original da imagem */
   opacity: 0.6;
   border-radius: 5px;
 }
 
-.carousel-prev,
+.carousel-prev ,
 .carousel-next {
   position: absolute;
- top: 215%; /* Posiciona os botões 2% distante da parte inferior do contêiner */
+ top: 165%; /* Posiciona os botões 2% distante da parte inferior do contêiner */
   transform: translateY(-50%);
   background-color: #7d1c1c;
-  width: 10%;
+  width: 7%;
   height: 3%;
   color: whitesmoke;
   font-size: 1vw; /* Tamanho de fonte relativo à largura da janela */
