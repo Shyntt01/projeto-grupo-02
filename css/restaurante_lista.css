@@ -1,23 +1,19 @@
 /*Aqui o menu de filtragem*/
 
-.main-restlist {
-    margin-top: 150px;
-    position: relative;
+.main {
+    margin-top: 150px; 
 }
   
-  .filtro-restlist {
-    margin-left: 30px;
+.filtro {
     display: flex;
     align-items: center;
 }
   
-  .filtro-restlist li {
-    margin-right: 13px;
+.filtro li {
+    margin-right: 10px;
 }
   
 .triangulo-invertido {
-    width: 0;
-    height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 10px solid #000;
@@ -25,14 +21,16 @@
 }
 
 /*Aqui começa a lista de restaurantes*/
-.main-restlist{
+.main{
     margin-left: 160px;
 }
 
 .listagem-restaurantes {
-    padding: 60px;
-
+    padding-top: 60px;
+    display: flex;  
+    align-items: center;
 }
+
   
 .img-restaurante {
     width: 480px;
@@ -40,6 +38,19 @@
     left: 160px;
     top: 416px;
 }
-  
 
-  
+
+ 
+.texto-restaurante {
+    margin-left: 80px;
+}
+
+.texto-restaurante h3,
+.texto-restaurante p {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+i {
+  font-size: 20px;
+}
