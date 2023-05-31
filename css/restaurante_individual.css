@@ -1,13 +1,11 @@
 
-.parent {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 .retangulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    width: 1520px;
+    padding-top: 120px;
+    width: 100%;
     height: 635px;
     left: 0px;
     top: 0px;
@@ -16,22 +14,23 @@
 }
 
 .titulo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
     color: #fff;
     font-weight: 400;
     font-size: 50px;
     line-height: 61px;  
 }
   
+.imagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .imagem1 {
     flex-basis: 33.33%;
     width: 30%;
     height: 30%;
-    padding-top: 500px;
+    padding-top: 635px;
     
 }
   
