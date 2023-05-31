@@ -1,8 +1,12 @@
+
+.carousel{margin: 0 auto;
+  max-width: 1200px;
+  overflow: hidden;
+}
 .carousel-container {
   display: flex;
   position: relative; /* Adiciona posicionamento relativo para que os botões possam ser posicionados de forma absoluta */
   width: 100%;
-  overflow: visible;
   gap: 60px; /* Adiciona um espaçamento de 30 pixels entre os itens do carrossel */
   transition: transform 0.4s ease; /* Adiciona uma transição suave */
 }
@@ -17,16 +21,16 @@
 
 .carousel-prev ,
 .carousel-next {
-  position: absolute;
- top: 165%; /* Posiciona os botões 2% distante da parte inferior do contêiner */
+  position:absolute;
+  top: 13rem;/*Posiciona os botões 165% distante da partesuperior do contêiner: 165;  */
   transform: translateY(-50%);
   background-color: #7d1c1c;
-  width: 7%;
-  height: 3%;
+  width: 90px;
+  height: 25px;
   color: whitesmoke;
-  font-size: 1vw; /* Tamanho de fonte relativo à largura da janela */
+  font-size: 15px; /* Tamanho de fonte relativo à largura da janela */
   border-radius: 15px;
-  transition: transform 0.3s ease; /* Adiciona uma animação suave de transição */
+  
 }
 
 .carousel-prev {
