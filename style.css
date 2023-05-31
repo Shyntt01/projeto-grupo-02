@@ -42,57 +42,6 @@ section h2 {
   margin-top: 11rem;
 }
 
-iframe {
-  height: 440px;
-  width: 100%;
-}
-
-form {
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
-}
-
-form input,
-form textarea {
-  font-size: 11pt;
-  border: none;
-  width: 650px;
-  height: 62px;
-  left: 238px;
-  top: 342px;
-  background: #f2f2f2;
-  border-radius: 50px;
-}
-
-form textarea {
-  height: 224px;
-}
-
-form button {
-  width: 234px;
-  height: 62px;
-  left: 553px;
-  top: 876px;
-  padding: 10px 20px;
-  background-color: #0a0a0a;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 50px;
-  margin-bottom: 5rem;
-  font-size: 12pt;
-  font-weight: bold;
-}
-
-#nome,
-#email,
-#telefone,
-#mensagem {
-  padding: 30px;
-  color: #000000;
-}
-
 header figure img {
   width: 150px;
   height: auto;
