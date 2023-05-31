@@ -56,4 +56,9 @@
     margin-top: 50px;
 }
 
+iframe {
+    height: 440px;
+    width: 100%;
+  }
+
 
