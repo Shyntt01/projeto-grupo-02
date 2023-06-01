@@ -11,7 +11,7 @@ cabecalho.innerHTML = `
           ><img src="./assets/img/Roteiro do sabor.png" alt="Logo Roteiro do sabor"
         /></a>
       </figure>
-      <nav class="lista">
+      <nav class="lista-header">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="restaurante_lista.html">Restaurantes</a></li>

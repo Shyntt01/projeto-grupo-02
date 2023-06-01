@@ -49,7 +49,8 @@ header figure img {
   margin-right: 100px;
 }
 
-nav li {
+.lista-header li,
+.lista-footer {
   padding: 30px;
   display: inline-block;
   /* text-align: center; */
@@ -57,18 +58,18 @@ nav li {
   font-size: 20px;
 }
 
-nav ul {
+.lista-header ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-nav ul li {
+.lista-header ul li {
   display: inline-block;
   margin-right: 10px;
 }
 
-nav ul li a {
+.lista-header ul li a {
   text-decoration: none;
   color: black;
   padding: 5px;

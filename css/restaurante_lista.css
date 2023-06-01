@@ -1,10 +1,11 @@
 /*Aqui o menu de filtragem*/
 
-.main {
+main {
     margin-top: 150px; 
+
 }
   
-.filtro {
+.filtro ul {
     display: flex;
     align-items: center;
 }
@@ -21,7 +22,7 @@
 }
 
 /*Aqui começa a lista de restaurantes*/
-.main{
+main {
     margin-left: 160px;
 }
 
@@ -31,6 +32,12 @@
     align-items: center;
 }
 
+.listagem-restaurantes h3:hover {
+    background-color: #333333;
+    color: #ffffff;
+    border-radius: 10px;
+    
+}
   
 .img-restaurante {
     width: 480px;
@@ -51,6 +58,17 @@
     margin-bottom: 35px;
 }
 
+.texto-restaurante h3 {
+    color: inherit;
+}
+
+
 i {
   font-size: 20px;
 }
+
+
+.pagination {
+    text-align: center;
+}
+  
