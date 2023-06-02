@@ -2,51 +2,106 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link para o css da página receita_individual -->
+    <link rel="stylesheet" href="css/receita_individual.css">
+    <!-- Link para o css do header -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <script src="./js/header.js" defer></script>
+    <script src="./js/carousel.js" defer></script>
+    <Script src="./js/footer.js" defer></Script>
     <title>Roteiro do Sabor</title>
   </head>
   <body>
-    <header></header>
-    <h1>Tacaca do Norte</h1>
-    <figure>
-      <img src="assets/img/imagemreceitatacaca.jpg" alt="prato_receita" />
-    </figure>
-    <p>
-      De origem indígena, o tacacá é uma comida típica da região amazônica. O
-      caldo amarelado à base de mandioca, chamado de tucupi, preparado com goma,
-      camarão e jambu é servido bem quente em cuias.
-    </p>
-    <h2>INGREDIENTES</h2>
-    <p>- 2 xícaras (chá) de tucupi</p>
-    <p>- 1 dente de alho</p>
-    <p>- 1 folha de chicória do pará</p>
-    <p>- 1 colher (café) de sal</p>
-    <p>- 1 pimenta de cheiro do pará cortada ao meio</p>
-    <p>- 1/4 de de maço de jambu (despreze os talos mais grossos)</p>
-    <p>- 4 camarões secos</p>
-    <p>- 30 g de goma</p>
-    <p>- 300 ml de água</p>
-    <h2>MODO DE PREPARO</h2>
-    <p>
-      1. Ferva o tucupi por 15 minutos. 2. Introduza o alho, a chicória, o sal,
-      o jambu e a pimenta de cheiro e cozinhe por mais cinco minutos ou até os
-      talos do jambu ficarem macios. 3. Em outra panela, dissolva a goma na água
-      e cozinhe até adquirir transparência. 4. Afervente os camarões secos
-      separadamente. 5. Em cuias apropriadas, coloque a goma até preencher um
-      terço e complete com o 6. Caldo temperado do tucupi e as folhas de jambu.
-      7. Finalize com um camarão para cada tacacá.
-    </p>
-    <footer>
-      <iframe src="footer.html" frameborder="0" scrolling="no"></iframe>
-    </footer>
-  </body>
+    <!-- Define a tag header com id="header-menu" para personalizar atraves do css-->
+    <!-- O header inteiro foi inserido, eliminando o iframe -->
+    <!-- É necessário replicar esse header nas outras páginas html -->
+    <!-- Header (cabeçalho) da página -->
+    <header id="header-menu">
+        <div class="logo"> <!--Cria uma div (coluna) com o nome logo aplicar o estilo do css-->
+        <a href="index.html">
+        <img src="./assets/img/Roteiro do sabor.png" alt="Logo Roteiro do sabor" width="200px" height="100px">
+        </a>
+      </div>
+      <nav class="menu">
+        <ul>
+          <!-- Criação  dos itens da lista como links -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="restaurante_lista.html">Restaurantes</a></li>
+          <li><a href="receita_lista.html">Receitas</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>   
+    </header>  
+    <body>
+    <main id="main">
+
+      <hr style="border-color: rgb(71, 8, 8); border-width: 2px;"> <!-- Linha horizontal logo abaixo do header  -->
+                 
+      <!-- Div principal da página -->
+      <div id="div-principal">
+
+      <!-- Título principal da página -->
+      <h1>
+        Tacaca do Norte
+      </h1>
+      
+      <!-- imagem principal da página -->
+      <img src="assets/img/imagemreceitatacaca.jpg" alt="prato_receita">
+      
+      <!-- Texto principal da página -->
+      <h2>
+        De origem indígena, o tacacá é uma comida típica da região amazônica. O caldo amarelado à base de mandioca, chamado de tucupi, preparado com goma, camarão e jambu é servido bem quente em cuias.
+      </h2>
+    
+      <!-- Subtitulo INGREDIENTES -->
+      <h3>
+        INGREDIENTES
+      </h3>
+
+      <!-- Lista não ordenada de INGREDIENTES - Exibe como tópicos-->
+      <ul>
+        <li>2 xícaras (chá) de tucupi</li>
+        <li>1 dente de alho</li>
+        <li>1 folha de chicória do pará</li>
+        <li>1 colher (café) de sal</li>
+        <li>1 pimenta de cheiro do pará cortada ao meio</li>
+        <li>1/4 de de maço de jambu (despreze os talos mais grossos)</li>
+        <li>4 camarões secos</li>
+        <li>30 g de goma</li>
+        <li>300 ml de água</li>
+      </ul>
+
+      <!-- Subtitulo MODO DE PREPARO -->
+      <h3>
+        MODO DE PREPARO
+      </h3>
+      
+      <!-- Lista ordenada para o modo de preparo - preenche automaticamente os números -->
+      <ol>
+        <li>Ferva o tucupi por 15 minutos.</li>
+        <li>Introduza o alho, a chicória, o sal, o jambu e a pimenta de cheiro e cozinhe por mais cinco minutos ou até os talos do jambu ficarem macios.</li>
+        <li>Em outra panela, dissolva a goma na água e cozinhe até adquirir transparência.</li>
+        <li>Afervente os camarões secos separadamente.</li>
+        <li>Em cuias apropriadas, coloque a goma até preencher um terço e complete com o</li>
+        <li>Caldo temperado do tucupi e as folhas de jambu.</li>
+        <li>Finalize com um camarão para cada tacacá.</li>
+      </ol>
+    </div>
+  </main>
+  <!-- Footer - Rodapé da página -->
+  <footer>
+    <script src="js/footer.js"></script>
+    <link rel="stylesheet" href="./css/footer.css">
+  </footer>
+</body>
 </html>
+
