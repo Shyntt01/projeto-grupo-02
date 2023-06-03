@@ -79,7 +79,7 @@ header figure img {
   display: none;
 }
 @media (max-width: 1000px) {
-  .lista {
+  .lista-header {
     display: none;
   }
   .menu-mobile {
