@@ -31,6 +31,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 9999;
+  height: 120px;
   /* justify-content: center;
   align-items: center;
   background-color: #f1f1f1; */
@@ -84,6 +85,10 @@ header figure img {
   }
   .menu-mobile {
     display: block;
+  }
+  header {
+    height: 120px;
+    padding-top: 22px;
   }
 }
 nav ul li a:hover {
