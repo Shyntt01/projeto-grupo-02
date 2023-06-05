@@ -12,8 +12,8 @@
   width: 100%;
   max-width: 1246px;
   margin: 0 auto;
-  padding-top: 95px;
   text-align: center;
+  padding: 80px 20px 0px 20px;
 }
 
 .wrapper-footer {
@@ -32,7 +32,6 @@ footer figure img {
 footer img {
   width: 50px;
   height: auto;
-
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -76,17 +75,6 @@ footer {
   width: 100%;
   z-index: 9998;
   height: 440px;
-  align-items: center;
-  justify-content: center;
-}
-
-.lista-footer {
-  display: flex;
-  align-items: center;
-}
-
-.rodape {
-  justify-content: center;
 }
 
 address {
@@ -99,4 +87,40 @@ address h4 {
 
 section a {
   padding-right: 50px;
+}
+
+@media (max-width: 768px) {
+  .wrapper-footer {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 80px;
+  }
+  nav ol {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  footer img {
+    justify-content: center;
+    align-items: center;
+  }
+  address {
+    text-align: center;
+  }
+  section a {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  footer {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    bottom: 0;
+    width: 100%;
+    z-index: 9998;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
 }

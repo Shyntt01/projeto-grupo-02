@@ -11,12 +11,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/receita_lista.css">
     <script src="./js/header.js" defer></script>
+    <script src="./js/footer.js" defer></script>
     <title>Roteiro do Sabor</title>
   </head>
   <body>
     <header></header>
-    ]
     <main>
       <section>
         <span>
@@ -24,29 +26,43 @@
           | S | T | U | V | W | X | Y | Z
         </span>
       </section>
-      <section>
-        <figure>
-          <img src="" alt="prato_receita" />
-        </figure>
-        <h2>Nome do prato</h2>
-        <p>Breve descrição do prato</p>
-        <figure>
-          <img src="" alt="prato_receita" />
-        </figure>
-        <h2>Nome do prato</h2>
-        <p>Breve descrição do prato</p>
-        <figure>
-          <img src="" alt="prato_receita" />
-        </figure>
-        <h2>Nome do prato</h2>
-        <p>Breve descrição do prato</p>
-      </section>
-      <section>
-        <span> 1 | 2 | 3 | 4 ... 10 </span>
-      </section>
+      <section class="listagem-restaurantes">
+        <img class="img-restaurante" src="/assets/img/cinza.png" alt="" />
+        <div class="texto-restaurante">
+        <h3><a href="restaurante_individual.html">Sabores do Sertão</a></h3>
+        <p>Breve descrição do restaurante</p>        
+        </div>
+      </section>    
+
+      <section class="listagem-restaurantes">
+        <img class="img-restaurante" src="/assets/img/cinza.png" alt="" />
+        <div class="texto-restaurante">
+        <h3><a href="restaurante_individual.html">Sabores do Sertão</a></h3>
+        <p>Breve descrição do restaurante</p>        
+        </div>
+      </section>    
+
+      <section class="listagem-restaurantes">
+        <img class="img-restaurante" src="/assets/img/cinza.png" alt="" />
+        <div class="texto-restaurante">
+        <h3><a href="restaurante_individual.html">Sabores do Sertão</a></h3>
+        <p>Breve descrição do restaurante</p>        
+        </div>
+      </section>   
+    
+      <div>
+        <nav class="pagination">
+          <ul>
+            <li><a>Anterior</a></li>
+            <li><a>1</a></li>
+            <li><a>2</a></li>
+            <li><a>3</a></li>
+            <li><a>4</a></li>
+            <li><a>Próxima</a></li>
+          </ul>
+        </nav>
+      </div>        
     </main>
-    <footer>
-      <iframe src="footer.html" frameborder="0" scrolling="no"></iframe>
-    </footer>
+    <footer></footer>
   </body>
 </html>

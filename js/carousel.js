@@ -4,6 +4,7 @@ var prevButton = carousel.querySelector('.carousel-prev');
 var nextButton = carousel.querySelector('.carousel-next');
 
 var slideWidth = carouselContainer.clientWidth;
+var slidesCount = carouselContainer.querySelectorAll('figure').length;
 var currentIndex = 0;
 
 function goToSlide(index) {
@@ -12,7 +13,7 @@ function goToSlide(index) {
 }
 
 function goToNextSlide() {
-  if (currentIndex < 5) {
+  if (currentIndex < slidesCount - 1) {
     goToSlide(currentIndex + 1);
   } else {
     goToSlide(0);
@@ -23,7 +24,7 @@ function goToPrevSlide() {
   if (currentIndex > 0) {
     goToSlide(currentIndex - 1);
   } else {
-    goToSlide(5);
+    goToSlide(slidesCount - 1);
   }
 }
 

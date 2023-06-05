@@ -1,18 +1,29 @@
 /*Aqui o menu de filtragem*/
 
 main {
-    margin-top: 150px; 
-
+    margin-top: 150px;
+    margin-left: 160px;
+    font-size: 20px
+}
+  
+.filtro {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center; /*deixa todo texto do filtro alinhado*/
+    justify-content: center;
+    text-align: center;
 }
   
 .filtro ul {
     display: flex;
-    align-items: center;
-}
+    align-items: center; /*deixa todo texto do filtro alinhado*/
+  }
   
-.filtro li {
-    margin-right: 10px;
-}
+  .filtro li {
+    margin-right: 40px; /* Espaçamento entre os itens */
+    
+  }
   
 .triangulo-invertido {
     border-left: 10px solid transparent;
@@ -22,9 +33,6 @@ main {
 }
 
 /*Aqui começa a lista de restaurantes*/
-main {
-    margin-left: 160px;
-}
 
 .listagem-restaurantes {
     padding-top: 60px;
@@ -32,12 +40,16 @@ main {
     align-items: center;
 }
 
-.listagem-restaurantes h3:hover {
+.listagem-restaurantes h3 a {
+    padding: 0px; 
+  }
+  
+  .listagem-restaurantes h3 a:hover {
     background-color: #333333;
     color: #ffffff;
     border-radius: 10px;
-    
-}
+  }
+  
   
 .img-restaurante {
     width: 480px;
@@ -58,17 +70,35 @@ main {
     margin-bottom: 35px;
 }
 
-.texto-restaurante h3 {
-    color: inherit;
-}
-
-
 i {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 
 .pagination {
     text-align: center;
+    padding-top: 109px;
+    padding-bottom: 109px;
+
+}
+
+  
+.pagination li {
+    display: inline-block;
+    margin-right: 30px; /* Espaçamento entre os itens */
 }
   
+@media(max-width: 768px) {
+    main {
+        margin-left: 10px;
+    }
+
+    .img-restaurante {
+        width: 400px;
+        height: 250px;
+        left: 140px;
+        top: 356px;
+    }
+    
+    
+}

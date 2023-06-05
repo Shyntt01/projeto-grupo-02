@@ -1,5 +1,6 @@
 
-.carousel{margin: 0 auto;
+.carousel{
+  margin: 0 auto;
   max-width: 1200px;
   overflow: hidden;
 }
@@ -15,14 +16,20 @@
   max-width: 600px;
   max-height: 400px; /* Define a largura máxima das imagens como 100% do tamanho do contêiner */
   height: auto; /* Mantém a proporção original da imagem */
-  opacity: 0.6;
+  opacity: 0.8  ;
   border-radius: 5px;
+}
+
+.carousel-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+
 }
 
 .carousel-prev ,
 .carousel-next {
-  position:absolute;
-  top: 13rem;/*Posiciona os botões 165% distante da partesuperior do contêiner: 165;  */
+  position: absolute;
   transform: translateY(-50%);
   background-color: #7d1c1c;
   width: 90px;
@@ -34,9 +41,9 @@
 }
 
 .carousel-prev {
-  left: 2%;
+  left: 2rem;
 }
 
 .carousel-next {
-  right: 2%;
+  right: 2rem;
 }
