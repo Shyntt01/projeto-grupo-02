@@ -12,12 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap"
       rel="stylesheet"/>
     <link rel="stylesheet" href="./css/style.css"/>
-    <link rel="stylesheet" href="./css/home.css">
-    <link rel="stylesheet" href="./css/carousel.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <script src="./js/header.js" defer></script>
-    <script src="./js/carousel.js" defer></script>
-    <Script src="./js/footer.js" defer></Script>
     <title>Roteiro do Sabor</title>
   </head>
   <body>
@@ -25,30 +20,17 @@
     <!-- O header inteiro foi inserido, eliminando o iframe -->
     <!-- É necessário replicar esse header nas outras páginas html -->
     <!-- Header (cabeçalho) da página -->
-    <header id="header-menu">
-        <div class="logo"> <!--Cria uma div (coluna) com o nome logo aplicar o estilo do css-->
-        <a href="index.html">
-        <img src="./assets/img/Roteiro do sabor.png" alt="Logo Roteiro do sabor" width="200px" height="100px">
-        </a>
-      </div>
-      <nav class="menu">
-        <ul>
-          <!-- Criação  dos itens da lista como links -->
-          <li><a href="index.html">Home</a></li>
-          <li><a href="restaurante_lista.html">Restaurantes</a></li>
-          <li><a href="receita_lista.html">Receitas</a></li>
-          <li><a href="contato.html">Contato</a></li>
-        </ul>
-      </nav>   
+    <header>
+         
     </header>  
-    <body>
+    
     <main id="main">
 
       <hr style="border-color: rgb(71, 8, 8); border-width: 2px;"> <!-- Linha horizontal logo abaixo do header  -->
                  
       <!-- Div principal da página -->
       <div id="div-principal">
-
+      <div class="prato-receita">
       <!-- Título principal da página -->
       <h1>
         Tacaca do Norte
@@ -61,9 +43,11 @@
       <h2>
         De origem indígena, o tacacá é uma comida típica da região amazônica. O caldo amarelado à base de mandioca, chamado de tucupi, preparado com goma, camarão e jambu é servido bem quente em cuias.
       </h2>
-    
+    </div>
+
+    <div class="prato-ingredientes">
       <!-- Subtitulo INGREDIENTES -->
-      <h3>
+      <h3 class="ingredientes-receita">
         INGREDIENTES
       </h3>
 
@@ -81,7 +65,7 @@
       </ul>
 
       <!-- Subtitulo MODO DE PREPARO -->
-      <h3>
+      <h3 class="modo-de-preparo">
         MODO DE PREPARO
       </h3>
       
@@ -96,11 +80,12 @@
         <li>Finalize com um camarão para cada tacacá.</li>
       </ol>
     </div>
+  </div>
   </main>
   <!-- Footer - Rodapé da página -->
   <footer>
     <script src="js/footer.js"></script>
-    <link rel="stylesheet" href="./css/footer.css">
+    <script src="./js/header.js"></script>
   </footer>
 </body>
 </html>

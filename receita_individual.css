@@ -1,0 +1,65 @@
+/* Define que todo título h1 ou h3 tenha cor de fundo #800000 (bordô)*/
+h1,h3 {
+    color: #7d1c1c;
+}
+
+/* Ativa responsividade no elemento id="div-principal" */
+#div-principal {
+    display: flex; /* Ativa responsividade */
+    margin-top: 180px;
+    margin-bottom: 90px;
+}
+.prato-receita {
+    margin-right: 200px;
+}
+
+/* Define o tamanho da imagem principal para 30% do tamanho da tela  */
+img {
+    width: 500px; /* Define largura maxima da imagem 35% da tela */
+    height: auto; /* Define altura maxima da imagem 35% da tela */
+    margin-top: 30px;
+}
+/* Define o estilo do título h1 */
+#div-principal h1 {
+    width: 500px; /* Define a largura do título em 35% do tamanho da tela*/
+    background-color: #7d1c1c; /* Define a cor de fundo do título h1*/
+    color: white; /* Define a cor da letra do título h1 */
+    padding-left: 100px; /* Adiciona uma margem de 1% à esquerda do título h1 */
+}
+
+/* Define o tamanho dos títulos h2 para 35% do total da tela */
+h2 { 
+    width: 500px;
+    font-size: 16pt;
+    margin-top: 10px;
+}
+
+/* Define o estilo do título h3 */
+
+.ingredientes-receita {
+    margin-top: 70px;
+    margin-bottom: 15px;
+    width: 500px; /* Largura do título h3 em 15% do tamanho da tela */
+    background-color: #7d1c1c; /* Cor de fundo título h3 */
+    color: white; /* Cor da letra do título h3 */
+    padding-left:175px; /* Adiciona uma margem de 1% à esquerda do título h3 */
+}
+
+.modo-de-preparo {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    width: 500px; /* Largura do título h3 em 15% do tamanho da tela */
+    background-color: #7d1c1c; /* Cor de fundo título h3 */
+    color: white; /* Cor da letra do título h3 */
+    padding-left:150px; /* Adiciona uma margem de 1% à esquerda do título h3 */
+}
+
+@media (max-width:1000px) {
+    #div-principal {
+        display: flex; /* Ativa responsividade */
+        margin-top: 180px;
+        margin-bottom: 90px;
+        flex-direction: column;
+    }
+    
+}
