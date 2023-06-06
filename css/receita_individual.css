@@ -15,7 +15,7 @@ h3 {
 }
 
 /* Define o tamanho da imagem principal para 30% do tamanho da tela  */
-img {
+.imagem-prato {
   width: 500px; /* Define largura maxima da imagem 35% da tela */
   height: auto; /* Define altura maxima da imagem 35% da tela */
   margin-top: 30px;
