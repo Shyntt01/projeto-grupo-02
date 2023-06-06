@@ -6,7 +6,7 @@
     position: absolute;
     padding-top: 120px;
     width: 100%;
-    height: 635px;
+    height: 400px;
     left: 0px;
     top: 0px;
     right: 0px;
@@ -16,7 +16,7 @@
 .titulo {
     color: #fff;
     font-weight: 400;
-    font-size: 50px;
+    font-size: 30px;
     line-height: 61px;  
 }
   
@@ -30,7 +30,7 @@
     flex-basis: 33.33%;
     width: 30%;
     height: 30%;
-    padding-top: 635px;
+    padding-top: 400px;
     
 }
   
@@ -45,22 +45,17 @@
 @media screen and (min-width: 768px) {
     .imagem1:nth-child(3n+1),
     .imagem2:nth-child(3n+1) 
-
-      
 }
 
 .texto{
+    padding-right: 50px;
+    padding-left: 50px;
     margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
 }
 
-.endereco {
-    margin-top: 50px;
-    margin-bottom: 10px;
+.endereco{
     text-align: center;
-    
-
+    padding-top: 100px
 }
 
 iframe {
@@ -68,16 +63,4 @@ iframe {
     width: 100%;
   }
 
-@media (max-width: 768px) {
-    .titulo{
-        font-size: 30px;
-    }
-
-    .retangulo {
-        width: 100%;
-        height: 535px;
-    }
-
-}
-    
 
