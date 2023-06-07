@@ -1,83 +1,78 @@
-/* Define o estilo de fonte a todos elementos html (*) */
-*{ 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-
 /* Define que todo título h1 ou h3 tenha cor de fundo #800000 (bordô)*/
-h1,h3 {
-    color: #800000;
+h1,
+h3 {
+  /* color: #7d1c1c; */
 }
 
 /* Ativa responsividade no elemento id="div-principal" */
 #div-principal {
-    display: flex; /* Ativa responsividade */
-    flex-direction: column; /* distribui os elementos da div de forma vertical (um embaixo do outro) */
-    margin-top: 180px;
+  display: flex; /* Ativa responsividade */
+  margin-top: 180px;
+  margin-bottom: 90px;
+  justify-content: space-around;
 }
 
+
 /* Define o tamanho da imagem principal para 30% do tamanho da tela  */
-#div-principal img {
-    width: 35%; /* Define largura maxima da imagem 35% da tela */
-    height: 30%; /* Define altura maxima da imagem 35% da tela */
-    margin-top: 30px;
+.imagem-prato {
+  width: 400px; /* Define largura maxima da imagem 35% da tela */
+  height: auto; /* Define altura maxima da imagem 35% da tela */
+  margin-top: 30px;
 }
 /* Define o estilo do título h1 */
 #div-principal h1 {
-    width: 35%; /* Define a largura do título em 35% do tamanho da tela*/
-    background-color: #ba5353; /* Define a cor de fundo do título h1*/
-    color: white; /* Define a cor da letra do título h1 */
-    padding-left: 1%; /* Adiciona uma margem de 1% à esquerda do título h1 */
+  width: 400px; /* Define a largura do título em 35% do tamanho da tela*/
+  background-color: #7d1c1c; /* Define a cor de fundo do título h1*/
+  color: white; /* Define a cor da letra do título h1 */
+  /* padding-left: 100px; Adiciona uma margem de 1% à esquerda do título h1 */
+  text-align: center;
 }
 
 /* Define o tamanho dos títulos h2 para 35% do total da tela */
-#div-principal h2 { 
-    width: 35%;
-    margin-top: 15px;
+h2 {
+  width: 400px;
+  font-size: 16pt;
+  margin-top: 10px;
 }
 
 /* Define o estilo do título h3 */
-#div-principal h3 {
-    width: 15%; /* Largura do título h3 em 15% do tamanho da tela */
-    background-color: #ba5353; /* Cor de fundo título h3 */
-    color: white; /* Cor da letra do título h3 */
-    padding-left: 1%; /* Adiciona uma margem de 1% à esquerda do título h3 */
-    margin-top: 15px;
+
+.ingredientes-receita {
+  margin-top: 70px;
+  margin-bottom: 15px;
+  width: 400px; /* Largura do título h3 em 15% do tamanho da tela */
+  background-color: #7d1c1c; /* Cor de fundo título h3 */
+  color: white; /* Cor da letra do título h3 */
+  /* padding-left: 175px; /* Adiciona uma margem de 1% à esquerda do título h3 */
+  text-align: center; */
 }
 
-/* Define o estilo da tag id=footer */
-#footer{
-    display: flex; /* Habilita responsividade */
-    width: 100%; /* Define a largura do footer em 100% da tela */
-    height: 5vh;    /* Define a altura do footer em 5% do tamanho da tela */
-    background-color: #800000; /* Define a cor de fundo do footer */
+.modo-de-preparo {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  width: 400px; /* Largura do título h3 em 15% do tamanho da tela */
+  background-color: #7d1c1c; /* Cor de fundo título h3 */
+  color: white; /* Cor da letra do título h3 */
+  /* padding-left: 150px; /* Adiciona uma margem de 1% à esquerda do título h3 */
+  text-align: center; */
 }
 
-/* Define o estilo da lista não ordenada do footer */
-#footer ul{
-    display: flex; /* Habilita responsividade */
-    list-style: none; /* Remove o simbolo de lista (bolinha)*/
-    flex-direction: row; /* Distribui os itens da lista de forma horizontal (da esquerda para a direita) */
-    padding-left: 10%; /* Define margem esquerda de 10% */
-    padding-right: 10%; /* Define margem direita de 10% */
-    justify-content: space-between; /* Distribuição cria espaços iguais entre os elementos de lista */
-    align-items: center; /* Centralia os itens automaticamente */
-    color: white; /* Define a cor para o texto */
+.lista-itens{
+    width: 400px;
 }
 
-/* Define que as imagens do footer tenham largura maxima de 5% do tmanho da tela */
-#footer img {
-    width: 5%;
+@media (max-width: 1000px) {
+  #div-principal {
+    display: flex; /* Ativa responsividade */
+    margin-top: 180px;
+    margin-bottom: 90px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .lista-itens{
+    padding: 0 20px 0 20px;
+}
 }
 
-/* Define que as imagens do footer tenham largura maxima de 5% do tmanho da tela */
-#footer ul a {
-    font-size: small; /* Define o tamanho da fonte do texto */
-    text-decoration: none;
-    color: white;
-}
 
-/* Define o estilo do texto do footer */
-#footer-texto {
-    font-size: small; /* Define o tamanho da fonte do texto */
-    width: 40%; /*Define o tamanho do texto em 40% do tamanho da tela*/
-}
+  
