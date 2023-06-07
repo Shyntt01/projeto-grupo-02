@@ -49,6 +49,17 @@
       
 }
 
+.avaliacao {
+    padding-top: 20px;
+    padding-left: 80px;
+    display: flex;
+    margin-left: 10px;
+}
+
+.avaliacao i,
+.avaliacao b {
+    padding-left: 10px;
+}
 
 .texto{
     margin-top: 50px;
