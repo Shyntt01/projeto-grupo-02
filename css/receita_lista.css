@@ -1,61 +1,79 @@
-
 main {
-    margin-top: 150px;
-    max-width: 1240px;
+  margin-top: 150px;
+  max-width: 1240px;
 }
-  
+
 .filtro ul {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
-  
+
 .filtro li {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 /*Aqui começa a lista de restaurantes*/
 main {
-    margin-left: 160px;
+  margin-left: 160px;
 }
 
 .listagem-restaurantes {
-    padding-top: 60px;
-    display: flex;  
-    align-items: center;
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
 }
 
-.listagem-restaurantes h3:hover {
-    background-color: #333333;
-    color: #ffffff;
-    border-radius: 10px;
-    
+a {
+  padding: 5px;
 }
-  
+
+.listagem-restaurantes h3 a {
+  color: black;
+}
+
+.listagem-restaurantes h3 a:hover {
+  background-color: #333333;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
 .img-restaurante {
-    width: 480px;
-    height: 304px;
-    left: 160px;
-    top: 416px;
+  width: 480px;
+  height: 304px;
+  left: 160px;
+  top: 416px;
 }
 
-
- 
 .texto-restaurante {
-    margin-left: 80px;
+  margin-left: 80px;
 }
 
 .texto-restaurante h3,
 .texto-restaurante p {
-    margin-top: 35px;
-    margin-bottom: 35px;
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 
 .texto-restaurante h3 {
-    color: inherit;
+  color: inherit;
 }
-
 
 i {
   font-size: 20px;
 }
-  
+
+.pagination {
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+.pagination li {
+  display: inline-block;
+  margin-right: 30px; /* Espaçamento entre os itens */
+}
+
+section {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
