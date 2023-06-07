@@ -1,5 +1,13 @@
-iframe {
+body {
+  overflow-x: hidden;
+}
+
+.iframeMaps {
   height: 440px;
+}
+
+iframe {
+  height: 100%;
   width: 100%;
 }
 
@@ -54,7 +62,8 @@ form button {
   form textarea {
     font-size: 11pt;
     border: none;
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     height: 62px;
     left: 238px;
     top: 342px;
