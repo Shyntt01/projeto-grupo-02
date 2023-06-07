@@ -1,8 +1,13 @@
-main{
-    width: 100%;
+
+.main-container{
   max-width: 1246px;
-  margin: 0 auto;
-  padding: 0px 15px;
+  width: 100%;
+}
+main{
+  width: 100%;
+  max-width: 1246px;
+  margin: 0 0 10rem 0;
+  padding: 0;
 }
 .homeArticle{
   display: flex;
@@ -10,17 +15,15 @@ main{
   align-items: center;
   flex-direction: column;
   width: 100%;
-  max-width: 1246px;
+
   height: 635px;
-  margin-top: 123px;
+  margin-top: 120px;
   background-color: #7D1C1C;
-  background-image: url(../assets/img/comidaMineira.jpg);
   background-size:cover;
-  padding: 20vh 10vh 20vh 10vh;
+  padding: 20px 10px;
   color:rgb(249, 249, 249);
   font-size: 20px;
   font-weight: 500;
-  /* opacity: 0.7; */
 };
 
 .home-mainContainer{
@@ -28,6 +31,7 @@ main{
   justify-content: center;
   align-items: center;
   max-width: 1246px;
+  width: 100%;
 }
 
 .home-title{
@@ -44,13 +48,14 @@ main{
 };
 
 
-.home-input{ 
+.home-input{ margin: 5rem 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   max-width: 1246px;
 }
 .home-input input {
+  margin: 2rem 24rem;
   font-size: 11pt;
   border: none;
   width: 450px;
@@ -80,5 +85,4 @@ main{
   color: whitesmoke;
   font-size: 30pt;
   margin-bottom: 8vh;
-
-}
+};

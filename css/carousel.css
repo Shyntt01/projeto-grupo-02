@@ -1,7 +1,7 @@
 
 .carousel{
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1246px;
   overflow: hidden;
 }
 .carousel-container {
@@ -20,6 +20,7 @@
   border-radius: 5px;
 }
 
+
 .carousel-buttons {
   display: flex;
   justify-content: space-around;
@@ -37,7 +38,6 @@
   color: whitesmoke;
   font-size: 15px; /* Tamanho de fonte relativo à largura da janela */
   border-radius: 15px;
-  
 }
 
 .carousel-prev {
