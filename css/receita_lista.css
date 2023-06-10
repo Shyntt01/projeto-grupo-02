@@ -1,6 +1,6 @@
 main {
-  margin-top: 150px;
-  max-width: 1240px;
+    margin-top: 150px;
+    max-width: 1246px;
 }
 
 .filtro ul {
@@ -43,6 +43,7 @@ a {
   left: 160px;
   top: 416px;
 }
+
 
 .texto-restaurante {
   margin-left: 80px;
