@@ -1,32 +1,33 @@
-var carousel = document.querySelector('.carousel');
-var carouselContainer = carousel.querySelector('.carousel-container');
-var prevButton = carousel.querySelector('.carousel-prev');
-var nextButton = carousel.querySelector('.carousel-next');
+const controls = document.querySelectorAll(".control");
+let currentItem = 0;
+const items = document.querySelectorAll(".item");
+const maxItems = items.length;
 
-var slideWidth = carouselContainer.clientWidth;
-var slidesCount = carouselContainer.querySelectorAll('figure').length;
-var currentIndex = 0;
+controls.forEach((control) => {
+  control.addEventListener("click", (e) => {
+    isLeft = e.target.classList.contains("arrow-left");
 
-function goToSlide(index) {
-  carouselContainer.style.transform = `translateX(-${index * slideWidth}px)`;
-  currentIndex = index;
-}
+    if (isLeft) {
+      currentItem -= 1;
+    } else {
+      currentItem += 1;
+    }
 
-function goToNextSlide() {
-  if (currentIndex < slidesCount - 1) {
-    goToSlide(currentIndex + 1);
-  } else {
-    goToSlide(0);
-  }
-}
+    if (currentItem >= maxItems) {
+      currentItem = 0;
+    }
 
-function goToPrevSlide() {
-  if (currentIndex > 0) {
-    goToSlide(currentIndex - 1);
-  } else {
-    goToSlide(slidesCount - 1);
-  }
-}
+    if (currentItem < 0) {
+      currentItem = maxItems - 1;
+    }
 
-nextButton.addEventListener('click', goToNextSlide);
-prevButton.addEventListener('click', goToPrevSlide);
+    items.forEach((item) => item.classList.remove("current-item"));
+
+    items[currentItem].scrollIntoView({
+      behavior: "smooth",
+      inline: "center"
+    });
+
+    items[currentItem].classList.add("current-item");
+  });
+});

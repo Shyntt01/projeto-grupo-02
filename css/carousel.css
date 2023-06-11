@@ -1,49 +1,93 @@
 
-.carousel{
-  margin: 0 auto;
-  max-width: 1246px;
-  overflow: hidden;
-}
 .carousel-container {
-  display: flex;
-  position: relative; /* Adiciona posicionamento relativo para que os botões possam ser posicionados de forma absoluta */
-  width: 100%;
-  gap: 60px; /* Adiciona um espaçamento de 30 pixels entre os itens do carrossel */
-  transition: transform 0.4s ease; /* Adiciona uma transição suave */
+  position: relative;
+  padding: 15px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
-.carousel img {
-  max-width: 600px;
-  max-height: 400px; /* Define a largura máxima das imagens como 100% do tamanho do contêiner */
-  height: auto; /* Mantém a proporção original da imagem */
-  opacity: 0.8  ;
-  border-radius: 5px;
+.gallery-wrapper {
+  overflow-x: auto;
 }
 
-
-.carousel-buttons {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 1rem;
-
-}
-
-.carousel-prev ,
-.carousel-next {
+.arrow-left,
+.arrow-right {
   position: absolute;
-  transform: translateY(-50%);
-  background-color: #7d1c1c;
-  width: 90px;
-  height: 25px;
-  color: whitesmoke;
-  font-size: 15px; /* Tamanho de fonte relativo à largura da janela */
-  border-radius: 15px;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  font-size: 20px;
+  line-height: 250px;
+  width: 40px;
+  color: #fff;
+  transition: all 600ms ease-in-out;
+  background: linear-gradient(to left, transparent 0%, black 200%);
+  opacity: 0.1;
+  cursor: pointer;
+  border: none;
 }
 
-.carousel-prev {
-  left: 2rem;
+.arrow-left:hover,
+.arrow-right:hover {
+  opacity: 1;
 }
 
-.carousel-next {
-  right: 2rem;
+.arrow-right {
+  right: 0;
+  left: auto;
+  text-align: right;
+  background: linear-gradient(to right, transparent 0%, black 200%);
+}
+
+.gallery {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+}
+
+.item {
+  width: 250px;
+  height: 250px;
+  flex-shrink: 0;
+  transition: all 600ms ease-in-out;
+  opacity: 0.5;
+}
+
+.current-item {
+  opacity: 1;
+}
+
+/* This is from w3schools */
+/* 
+https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
+/* Hide scrollbar for Chrome, Safari and Opera */
+.gallery-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.gallery-wrapper {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.cyan {
+  background: cyan;
+}
+
+.deeppink {
+  background: deeppink;
+}
+
+.turquoise {
+  background: turquoise;
+}
+
+.darkblue {
+  background: darkblue;
+}
+
+.purple {
+  background: purple;
 }
