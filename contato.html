@@ -29,7 +29,9 @@
               name="nome"
               required
               placeholder="Nome"
-            /><br /><br />
+            />
+            <p id="nome-ajuda" class="helper-text"></p>
+            <br /><br />
 
             <label for="email"></label>
             <input
@@ -38,15 +40,20 @@
               name="email"
               required
               placeholder="E-mail"
-            /><br /><br />
+            />
+            <p id="email-ajuda" class="helper-text"></p>
+            <br /><br />
 
             <label for="telefone"></label>
             <input
               type="tel"
               id="telefone"
               name="telefone"
+              required
               placeholder="Telefone"
-            /><br /><br />
+            />
+            <p id="telefone-ajuda" class="helper-text"></p>
+            <br /><br />
 
             <label for="mensagem"></label>
             <textarea
@@ -54,8 +61,9 @@
               name="mensagem"
               required
               placeholder="Digite aqui o assunto que você gostaria de mandar..."
-            ></textarea
-            ><br /><br />
+            ></textarea>
+            <p id="mensagem-ajuda" class="helper-text"></p>
+            <br /><br />
 
             <button type="submit" value="Enviar" id="botao">ENVIAR</button>
           </form>
@@ -76,5 +84,6 @@
     <footer></footer>
     <script src="js/header.js"></script>
     <script src="js/footer.js"></script>
+    <script src="js/contato.js"></script>
   </body>
 </html>

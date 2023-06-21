@@ -74,3 +74,54 @@ form button {
     height: 224px;
   }
 }
+
+/* ---------- Estilos dinâmicos ---------- */
+.required-popup::after {
+  content: "*Campo obrigatório";
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #dfdfdf;
+  font-size: 0.65rem;
+  padding: 0.2rem 0.3rem;
+  width: auto;
+  display: block;
+  background-color: #202020;
+}
+
+input.error {
+  border: solid 2px #992020;
+  background-color: #ccbbbb;
+  color: #662020;
+}
+
+input.correct {
+  background-color: #bbccbb;
+  border: solid 2px #206620;
+  color: #206620;
+}
+
+.visible {
+  display: block;
+}
+
+textarea.error {
+  border: solid 2px #992020;
+  background-color: #ccbbbb;
+  color: #662020;
+}
+
+textarea.correct {
+  background-color: #bbccbb;
+  border: solid 2px #206620;
+  color: #206620;
+}
+
+#nome-ajuda,
+#email-ajuda,
+#telefone-ajuda,
+#mensagem-ajuda {
+  margin-top: 10px;
+  margin-bottom: -10px;
+  color: #787878;
+}
