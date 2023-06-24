@@ -1,104 +1,152 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- link para o css da página receita_individual -->
-    <link rel="stylesheet" href="css/receita_individual.css" />
-    <!-- Link para o css do header -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-    <title>Roteiro do Sabor</title>
-  </head>
-  <body>
-    <!-- Define a tag header com id="header-menu" para personalizar atraves do css-->
-    <!-- O header inteiro foi inserido, eliminando o iframe -->
-    <!-- É necessário replicar esse header nas outras páginas html -->
-    <!-- Header (cabeçalho) da página -->
-    <header></header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- link para o css da página receita_individual -->
+  <link rel="stylesheet" href="css/receita_individual.css" />
+  <!-- Link para o css do header -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap"
+    rel="stylesheet"/>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+  <title>Roteiro do Sabor</title>
+</head>
+<body>
+ 
+  <!-- Header (cabeçalho) da página -->
+  <header></header>
+  <main id="main">
+    <div class="container">
+      <hr style="border-color: rgb(71, 8, 8); border-width: 2px" />
 
-    <main id="main">
-      <div class="container">
-        <hr style="border-color: rgb(71, 8, 8); border-width: 2px" />
-        <!-- Linha horizontal logo abaixo do header  -->
 
-        <!-- Div principal da página -->
-        <div id="div-principal">
-          <div class="prato-receita">
-            <!-- Título principal da página -->
-            <h1>Tacaca do Norte</h1>
+      <!-- Div principal da página -->
+      <div id="div-principal">
+        <div class="prato-receita">
+          <!-- Título principal da página -->
+          <h1>Tacacá do Norte</h1>
 
-            <!-- imagem principal da página -->
-            <img
-              src="assets/img/imagemreceitatacaca.jpg"
-              alt="prato_receita"
-              class="imagem-prato"
-            />
 
-            <!-- Texto principal da página -->
-            <h2>
-              De origem indígena, o tacacá é uma comida típica da região
-              amazônica. O caldo amarelado à base de mandioca, chamado de
-              tucupi, preparado com goma, camarão e jambu é servido bem quente
-              em cuias.
-            </h2>
-          </div>
+          <!-- imagem principal da página -->
+          <img
+          src="assets/img/imagemreceitatacaca.jpg" alt="prato_receita" class="imagem-prato fade-in" />
 
-          <div class="prato-ingredientes">
-            <!-- Subtitulo INGREDIENTES -->
-            <h3 class="ingredientes-receita">INGREDIENTES</h3>
 
-            <!-- Lista não ordenada de INGREDIENTES - Exibe como tópicos-->
-            <ul class="lista-itens">
-              <li>2 xícaras (chá) de tucupi</li>
-              <li>1 dente de alho</li>
-              <li>1 folha de chicória do pará</li>
-              <li>1 colher (café) de sal</li>
-              <li>1 pimenta de cheiro do pará cortada ao meio</li>
-              <li>1/4 de de maço de jambu (despreze os talos mais grossos)</li>
-              <li>4 camarões secos</li>
-              <li>30 g de goma</li>
-              <li>300 ml de água</li>
-            </ul>
+          <!-- Texto principal da página -->
+          <h2>
+            <br>
+            De origem indígena, o tacacá é uma comida típica da região
+            amazônica. O caldo amarelado à base de mandioca, chamado de
+            tucupi, preparado com goma, camarão e jambu é servido bem quente
+            em cuias.
+          </h2>
+        </div>
+        <div class="prato-ingredientes">
+          <!-- Subtitulo INGREDIENTES -->
+          <h3 class="ingredientes-receita" style="margin-top: 120px;">INGREDIENTES</h3>
 
-            <!-- Subtitulo MODO DE PREPARO -->
-            <h3 class="modo-de-preparo">MODO DE PREPARO</h3>
 
-            <!-- Lista ordenada para o modo de preparo - preenche automaticamente os números -->
-            <ol class="lista-itens">
-              <li>Ferva o tucupi por 15 minutos.</li>
-              <li>
-                Introduza o alho, a chicória, o sal, o jambu e a pimenta de
-                cheiro e cozinhe por mais cinco minutos ou até os talos do jambu
-                ficarem macios.
-              </li>
-              <li>
-                Em outra panela, dissolva a goma na água e cozinhe até adquirir
-                transparência.
-              </li>
-              <li>Afervente os camarões secos separadamente.</li>
-              <li>
-                Em cuias apropriadas, coloque a goma até preencher um terço e
-                complete com o
-              </li>
-              <li>Caldo temperado do tucupi e as folhas de jambu.</li>
-              <li>Finalize com um camarão para cada tacacá.</li>
-            </ol>
+          <!-- Lista não ordenada de INGREDIENTES - Exibe como tópicos-->
+          <ul class="lista-itens">
+            <li>2 xícaras (chá) de tucupi</li>
+            <li>1 dente de alho</li>
+            <li>1 folha de chicória do pará</li>
+            <li>1 colher (café) de sal</li>
+            <li>1 pimenta de cheiro do pará cortada ao meio</li>
+            <li>1/4 de de maço de jambu (despreze os talos mais grossos)</li>
+            <li>4 camarões secos</li>
+            <li>30 g de goma</li>
+            <li>300 ml de água</li>
+          </ul><br>
+
+
+          <!-- Subtitulo MODO DE PREPARO -->
+          <h3 class="modo-de-preparo">MODO DE PREPARO</h3>
+
+
+          <!-- Lista ordenada para o modo de preparo - preenche automaticamente os números -->
+          <ol class="lista-itens">
+            <li>Ferva o tucupi por 15 minutos.</li>
+            <li>Agora coloque o alho, a chicória, o sal, o jambu e a pimenta de cheiro (a gosto) e cozinhe por mais 5 minutos ou até os talos do jambu ficarem macios.</li>
+            <li>Em outra panela, dissolva a goma na água e cozinhe até adquirir transparência.</li>
+            <li>Afervente os camarões secos separadamente.</li>
+            <li>Em cuias apropriadas, coloque a goma até preencher um terço e complete com o Caldo temperado do tucupi e as folhas de jambu.</li>
+            <li>Finalize com um camarão para cada tacacá.</li>
+          </ol> <br>
+          <div class="classificacao">
+            Gostou da receita? Dê sua avaliação: <span id="classificacao-media">0.0</span>
+          </div><br>          
+         
+          <!-- Botões de classificação -->
+          <div class="classificacao-botoes" data-valor="0">
+            <button class="botao-classificacao" data-valor="1">1 estrela</button>
+            <button class="botao-classificacao" data-valor="2">2 estrelas</button>
+            <button class="botao-classificacao" data-valor="3">3 estrelas</button>
+            <button class="botao-classificacao" data-valor="4">4 estrelas</button>
+            <button class="botao-classificacao" data-valor="5">5 estrelas</button>
           </div>
         </div>
       </div>
-    </main>
-    <!-- Footer - Rodapé da página -->
-    <footer>
-      <script src="js/footer.js"></script>
-      <script src="./js/header.js"></script>
-    </footer>
-  </body>
+    </div>
+  </main>
+  <footer>
+    <script src="js/footer.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/receita_individual.js"></script>
+  </footer>
+  <script>
+    // Função para atualizar a classificação média*/
+    function atualizarClassificacao() {
+      // Elementos de classificação*/
+      const classificacoes = document.querySelectorAll('.classificacao');
+
+
+      let somaClassificacoes = 0;
+      let numClassificacoes = 0;
+
+
+      // Soma das classificações e conta o número de classificações*/
+      classificacoes.forEach(function(classificacao) {
+        const valorClassificacao = parseInt(classificacao.dataset.valor);
+        if (!isNaN(valorClassificacao)) {
+          somaClassificacoes += valorClassificacao;
+          numClassificacoes++;
+        }
+      });
+
+
+      // Calcula a classificação média*/
+      const classificacaoMedia = somaClassificacoes / numClassificacoes;
+
+
+      // Atualiza a exibição da classificação média*/
+      const classificacaoMediaElemento = document.getElementById('classificacao-media');
+      classificacaoMediaElemento.textContent = classificacaoMedia.toFixed(1);
+    }
+
+
+    // Adiciona um evento de clique para cada botão de classificação*/
+    const botoesClassificacao = document.querySelectorAll('.botao-classificacao');
+    botoesClassificacao.forEach(function(botaoClassificacao) {
+      botaoClassificacao.addEventListener('click', function() {
+        // Obtem a classificação do botão clicado*/
+        const valorClassificacao = parseInt(this.dataset.valor);
+
+
+        // Atualiza a classificação do elemento pai*/
+        const classificacaoElemento = this.parentElement.parentElement.querySelector('.classificacao');
+        classificacaoElemento.dataset.valor = valorClassificacao;
+
+
+        // Atualiza a exibição da classificação
+        atualizarClassificacao();
+      });
+    });
+  </script>
+</body>
 </html>
