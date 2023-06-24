@@ -6,19 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="/css/footer.css" />
     <link rel="stylesheet" href="/css/restaurante_lista.css" />
     <script src="./js/header.js" defer></script>
     <script src="./js/footer.js" defer></script>
+    <script src="./js/restaurante_lista.js" defer></script>
     <title>Roteiro do Sabor</title>
   </head>
   <body>
@@ -26,74 +21,50 @@
     <main>
       <div class="container">
         <nav class="filtro">
-          <ul>
-            <li>Avaliação</li>
-            <div class="triangulo-invertido"></div>
-            <li>Local</li>
-            <div class="triangulo-invertido"></div>
-            <li>Tipo de comida</li>
-            <div class="triangulo-invertido"></div>
-          </ul>
+          <div class="filtro">
+            <div class="filtro-nome">Avaliação</div>
+            <div class="filtro-triangulo" id="avaliacaoTriangulo"></div>
+            <div class="filtro-content hidden" id="avaliacaoFiltro">
+            </div>
+          </div>
+          
+          <div class="filtro">
+            <div class="filtro-nome">Preço</div>
+            <div class="filtro-triangulo" id="precoTriangulo"></div>
+            <div class="filtro-content hidden" id="precoFiltro">
+            </div>
+          </div>
+          
+          <div class="filtro">
+            <div class="filtro-nome">Local</div>
+            <div class="filtro-triangulo" id="localTriangulo"></div>
+            <div class="filtro-content hidden" id="localFiltro">
+
+            </div>
+          </div>
         </nav>
-
-        <section class="listagem-restaurantes">
-          <img class="img-restaurante" src="/assets/img/cinza.png" alt="" />
-          <div class="texto-restaurante">
-            <i class="fas fa-star" style="color: yellow"></i>
-            <i class="fas fa-star" style="color: yellow"></i>
-            <i class="fas fa-star" style="color: yellow"></i>
-            <i class="fas fa-star" style="color: yellow"></i>
-            <i class="fa-regular fa-star" style="color: gray"></i>
-            <h3><a href="restaurante_individual.html">Sabores do Sertão</a></h3>
-            <p>Breve descrição do restaurante</p>
-            <i class="fa-solid fa-dollar-sign" style="color: #1e5d00"></i>
-            <i class="fa-solid fa-dollar-sign" style="color: #1e5d00"></i>
-            <i class="fa-solid fa-dollar-sign" style="color: #1e5d00"></i>
-            <i class="fa-solid fa-dollar-sign" style="color: #1e5d00"></i>
-          </div>
-        </section>
-
-        <section class="listagem-restaurantes">
-          <img class="img-restaurante" src="/assets/img/cinza.png" alt="" />
-          <div class="texto-restaurante">
-            <i class="fas fa-star" style="color: yellow"></i>
-            <i class="fas fa-star" style="color: yellow"></i>
-            <i class="fas fa-star" style="color: yellow"></i>
-            <i class="fas fa-star" style="color: yellow"></i>
-            <i class="fa-regular fa-star" style="color: gray"></i>
-            <h3>Nome do restaurante</h3>
-            <p>Breve descrição do restaurante</p>
-            <i class="fa-solid fa-dollar-sign" style="color: #1e5d00"></i>
-            <i class="fa-solid fa-dollar-sign" style="color: #1e5d00"></i>
-            <i class="fa-solid fa-dollar-sign" style="color: #1e5d00"></i>
-          </div>
-        </section>
-
-        <section class="listagem-restaurantes">
-          <img class="img-restaurante" src="/assets/img/cinza.png" alt="" />
-          <div class="texto-restaurante">
-            <i class="fas fa-star" style="color: yellow"></i>
-            <i class="fas fa-star" style="color: yellow"></i>
-            <i class="fas fa-star" style="color: yellow"></i>
-            <i class="fas fa-star" style="color: yellow"></i>
-            <i class="fa-regular fa-star" style="color: gray"></i>
-            <h3>Nome do restaurante</h3>
-            <p>Breve descrição do restaurante</p>
-            <i class="fa-solid fa-dollar-sign" style="color: #1e5d00"></i>
-            <i class="fa-solid fa-dollar-sign" style="color: #1e5d00"></i>
-            <i class="fa-solid fa-dollar-sign" style="color: #1e5d00"></i>
-          </div>
-        </section>
+        
+        <section id="restaurantes"></section>
 
         <div>
           <nav class="pagination">
             <ul>
               <li><a>Anterior</a></li>
-              <li><a>1</a></li>
-              <li><a>2</a></li>
-              <li><a>3</a></li>
-              <li><a>4</a></li>
-              <li><a>Próxima</a></li>
+              <li>
+                <a>1</a>
+              </li>
+              <li>
+                <a>2</a>
+              </li>
+              <li>
+                <a>3</a>
+              </li>
+              <li>
+                <a>4</a>
+              </li>
+              <li>
+                <a>Próxima</a>
+              </li>
             </ul>
           </nav>
         </div>

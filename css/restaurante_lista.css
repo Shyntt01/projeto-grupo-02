@@ -1,17 +1,15 @@
 /*Aqui o menu de filtragem*/
 
 main {
-  margin-top: 150px;
+  margin-top: 180px;
   font-size: 20px;
 }
 
 .filtro {
-  padding-top: 30px;
   padding-bottom: 30px;
   display: flex;
   align-items: center; /*deixa todo texto do filtro alinhado*/
   justify-content: center;
-  text-align: center;
 }
 
 .filtro ul {
@@ -23,12 +21,25 @@ main {
   margin-right: 40px; /* Espaçamento entre os itens */
 }
 
-.triangulo-invertido {
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 10px solid #000;
-  transform: translateX(-180%);
+.filtro .filtro-nome {
+  margin-left: 10px;
 }
+
+
+.filtro-triangulo {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.filtro-content {
+  display: none;
+}
+
+.filtro-content.hidden {
+  display: block;
+}
+
+
 
 /*Aqui começa a lista de restaurantes*/
 
@@ -63,24 +74,28 @@ main {
 
 .texto-restaurante h3,
 .texto-restaurante p {
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-i {
+
+.precoRestaurante .fa-dollar-sign {
+  margin-right: 5px; /* Adiciona espaçamento entre os ícones de sifrão */
+}
+
+.fa-solid {
+  padding-bottom: 20px;
   font-size: 20px;
 }
 
 .pagination {
   text-align: center;
-
   padding-top: 109px;
   padding-bottom: 109px;
 }
 
 .pagination li {
   display: inline-block;
-
   margin-right: 30px; /* Espaçamento entre os itens */
 }
 
@@ -92,3 +107,5 @@ i {
     top: 356px;
   }
 }
+
+
