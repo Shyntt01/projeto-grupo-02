@@ -1,10 +1,13 @@
-const controls = document.querySelectorAll(".control");
-let currentItem = 0;
-const items = document.querySelectorAll(".item");
-const maxItems = items.length;
+function setupCarousel(carousel) {
+  const controls = carousel.querySelectorAll(".control");
+  let currentItem = 0;
+  const items = carousel.querySelectorAll(".item");
+  const maxItems = items.length;
 
 controls.forEach((control) => {
   control.addEventListener("click", (e) => {
+    e.preventDefault();
+
     isLeft = e.target.classList.contains("arrow-left");
 
     if (isLeft) {
@@ -23,11 +26,19 @@ controls.forEach((control) => {
 
     items.forEach((item) => item.classList.remove("current-item"));
 
-    items[currentItem].scrollIntoView({
-      behavior: "smooth",
-      inline: "center"
-    });
+    const galleryWrapper = control.closest(".carousel-container").querySelector(".gallery-wrapper");
+    const itemWidth = items[currentItem].offsetWidth;
+    const scrollLeft = itemWidth * currentItem;
+    
+    galleryWrapper.scrollLeft = scrollLeft;
 
     items[currentItem].classList.add("current-item");
   });
+});
+}
+
+const carousels = document.querySelectorAll(".carousel-container");
+
+carousels.forEach((carousel) => {
+  setupCarousel(carousel);
 });
