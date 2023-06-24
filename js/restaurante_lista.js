@@ -31,6 +31,9 @@ const arrayRestaurantes = [
   }
 ];
 
+let paginaAtual = 1;
+const itensPorPagina = 3;
+
 function criarRestaurante(restaurante) {
   const section = document.createElement('section');
   section.className = 'listagem-restaurantes';
@@ -72,6 +75,30 @@ function criarPreco(preco) {
 
 
 const restaurantesSection = document.getElementById('restaurantes');
+
+function exibirRestaurantesPagina(pagina) {
+  const startIndex = (pagina - 1) * itensPorPagina;
+  const endIndex = startIndex + itensPorPagina;
+  const restaurantesPagina = arrayRestaurantes.slice(startIndex, endIndex);
+  atualizarListaRestaurantes(restaurantesPagina);
+}
+function trocarPagina(pagina) {
+  paginaAtual = pagina;
+  exibirRestaurantesPagina(pagina);
+}
+const pagina1Button = document.getElementById('pagina1');
+const pagina2Button = document.getElementById('pagina2');
+
+pagina1Button.addEventListener('click', () => {
+  trocarPagina(1);
+});
+
+pagina2Button.addEventListener('click', () => {
+  trocarPagina(2);
+});
+
+// Inicialização da página
+exibirRestaurantesPagina(paginaAtual);
 
 function filtrarRestaurantes() {
   const selectedAvaliacao = document.getElementById('avaliacaoFiltroSelect').value;
