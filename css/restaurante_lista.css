@@ -18,7 +18,7 @@ main {
 }
 
 .filtro li {
-  margin-right: 40px; /* Espaçamento entre os itens */
+  margin-right: 30px; /* Espaçamento entre os itens */
 }
 
 .filtro .filtro-nome {
@@ -96,7 +96,7 @@ main {
 
 .pagination li {
   display: inline-block;
-  margin-right: 30px; /* Espaçamento entre os itens */
+  margin-right: 10px; /* Espaçamento entre os itens */
 }
 
 @media (max-width: 768px) {

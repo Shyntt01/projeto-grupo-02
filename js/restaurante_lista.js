@@ -28,8 +28,39 @@ const arrayRestaurantes = [
     img: '/assets/img/cinza.png',
     imgAlt: '',
     local: 'MG',
-  }
+  },
+  {
+    nome: 'Novo Restaurante',
+    descricao: 'Descrição do novo restaurante',
+    estrelasAtivas: 4,
+    preco: 2,
+    link: '',
+    img: '/assets/img/cinza.png',
+    imgAlt: '',
+    local: 'SP',
+  },
+  {
+    nome: 'Novo Restaurante',
+    descricao: 'Descrição do novo restaurante',
+    estrelasAtivas: 4,
+    preco: 2,
+    link: '',
+    img: '/assets/img/cinza.png',
+    imgAlt: '',
+    local: 'SP',
+  },
+  {
+    nome: 'Novo Restaurante',
+    descricao: 'Descrição do novo restaurante',
+    estrelasAtivas: 4,
+    preco: 2,
+    link: '',
+    img: '/assets/img/cinza.png',
+    imgAlt: '',
+    local: 'SP',
+  },
 ];
+
 
 let paginaAtual = 1;
 const itensPorPagina = 3;
@@ -82,6 +113,7 @@ function exibirRestaurantesPagina(pagina) {
   const restaurantesPagina = arrayRestaurantes.slice(startIndex, endIndex);
   atualizarListaRestaurantes(restaurantesPagina);
 }
+
 function trocarPagina(pagina) {
   paginaAtual = pagina;
   exibirRestaurantesPagina(pagina);
@@ -98,7 +130,7 @@ pagina2Button.addEventListener('click', () => {
 });
 
 // Inicialização da página
-exibirRestaurantesPagina(paginaAtual);
+exibirRestaurantesPagina(1);
 
 function filtrarRestaurantes() {
   const selectedAvaliacao = document.getElementById('avaliacaoFiltroSelect').value;
@@ -181,5 +213,3 @@ const opcoesLocal = [
 criarFiltroOpcoes('avaliacaoTriangulo', 'avaliacaoFiltro', 'avaliacaoFiltroSelect', opcoesAvaliacao);
 criarFiltroOpcoes('precoTriangulo', 'precoFiltro', 'precoFiltroSelect', opcoesPreco);
 criarFiltroOpcoes('localTriangulo', 'localFiltro', 'localFiltroSelect', opcoesLocal);
-
-filtrarRestaurantes();
