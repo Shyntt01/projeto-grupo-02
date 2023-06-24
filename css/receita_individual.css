@@ -1,78 +1,126 @@
-/* Define que todo título h1 ou h3 tenha cor de fundo #800000 (bordô)*/
+/*
 h1,
-h3 {
-  /* color: #7d1c1c; */
-}
+h3 {*/
 
 /* Ativa responsividade no elemento id="div-principal" */
 #div-principal {
-  display: flex; /* Ativa responsividade */
+  display: flex; /* Ativa responsividade*/
   margin-top: 180px;
   margin-bottom: 90px;
   justify-content: space-around;
 }
 
-
-/* Define o tamanho da imagem principal para 30% do tamanho da tela  */
 .imagem-prato {
-  width: 400px; /* Define largura maxima da imagem 35% da tela */
-  height: auto; /* Define altura maxima da imagem 35% da tela */
+  width: 400px;
+  height: auto;
   margin-top: 30px;
+  border-radius: 30px; /* curvatura das pontas */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 0, 0.2) inset, 0 0 20px orange;
 }
+
+.imagem-prato:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7), 0 0 40px rgba(0, 0, 0, 0.4) inset, 0 0 20px orange;
+}
+
 /* Define o estilo do título h1 */
 #div-principal h1 {
-  width: 400px; /* Define a largura do título em 35% do tamanho da tela*/
-  background-color: #7d1c1c; /* Define a cor de fundo do título h1*/
-  color: white; /* Define a cor da letra do título h1 */
-  /* padding-left: 100px; Adiciona uma margem de 1% à esquerda do título h1 */
+  width: 400px;
+  background-color: #7d1c1c;
+  color: white;
   text-align: center;
+  margin-bottom: 20px;
+  margin-top: 30px; /* Altera o valor da margem superior conforme necessário
+  border-radius: 10px; /* Altere o valor conforme necessário */
 }
 
-/* Define o tamanho dos títulos h2 para 35% do total da tela */
+/* Define o estilo do título h2 */
 h2 {
   width: 400px;
   font-size: 16pt;
   margin-top: 10px;
+  border-radius: 10px; /* Altere o valor conforme necessário */
 }
+
 
 /* Define o estilo do título h3 */
 
 .ingredientes-receita {
-  margin-top: 70px;
+  /*margin-top: 70px;*/
   margin-bottom: 15px;
-  width: 400px; /* Largura do título h3 em 15% do tamanho da tela */
+  width: 400px; /* Largura do título h3 */
   background-color: #7d1c1c; /* Cor de fundo título h3 */
   color: white; /* Cor da letra do título h3 */
-  /* padding-left: 175px; /* Adiciona uma margem de 1% à esquerda do título h3 */
-  text-align: center; */
+  /* padding-left: 175px; /* Adiciona uma margem à esquerda do título h3 */
+  text-align: center;
+  border-radius: 10px; /* Altere o valor conforme necessário */
 }
 
 .modo-de-preparo {
-  margin-top: 40px;
+  /*margin-top: 40px;*/
   margin-bottom: 15px;
-  width: 400px; /* Largura do título h3 em 15% do tamanho da tela */
+  width: 400px; /* Largura do título h3 */
   background-color: #7d1c1c; /* Cor de fundo título h3 */
   color: white; /* Cor da letra do título h3 */
-  /* padding-left: 150px; /* Adiciona uma margem de 1% à esquerda do título h3 */
-  text-align: center; */
+  /* padding-left: 150px; /* Adiciona uma margem à esquerda do título h3 */
+  text-align: center;
+  border-radius: 10px; /* Altere o valor conforme necessário */
 }
 
 .lista-itens{
     width: 400px;
+    padding: 0 20px 0 20px;
 }
 
 @media (max-width: 1000px) {
   #div-principal {
-    display: flex; /* Ativa responsividade */
-    margin-top: 180px;
-    margin-bottom: 90px;
     flex-direction: column;
     align-items: center;
   }
-  .lista-itens{
-    padding: 0 20px 0 20px;
 }
+.classificacao {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#classificacao-media {
+  font-weight: bold;
+}
+
+.classificacao-botoes {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Centraliza os botões verticalmente */
+}
+
+.botao-classificacao {
+  font-size: 13px; /* Aumenta o tamanho da fonte */
+  padding: 8px; /* Aumenta o preenchimento interno do botão */
+  border-radius: 10px; /* Arredonda as bordas do botão */
+  background-color: #4CAF50; /* Cor de fundo verde */
+  color: white; /* Cor do texto branco */
+  cursor: pointer;
+  margin-right: 5px; /* Adiciona um espaçamento horizontal de 5px entre os botões */
+  /* Outros estilos do botão */
+}
+
+.botao-classificacao:hover {
+  transform: scale(1.1); /* Aumenta o tamanho do botão em 10% */
+  /* Outros estilos do botão */
+}
+ 
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 1s ease-in forwards;
 }
 
 
-  
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
