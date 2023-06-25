@@ -1,5 +1,5 @@
 //Etapa 1: Criar o elemento Article
-const footer = document.createElement("article");
+const footer = document.createElement("article-footer");
 
 //Etapa 2: Manipular o elemento article através do innerHtml
 footer.innerHTML = `
