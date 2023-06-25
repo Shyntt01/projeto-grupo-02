@@ -25,7 +25,7 @@ const arrayRestaurantes = [
     estrelasAtivas: 3,
     preco: 2,
     link: 'restaurante_individual.html?restaurante=3',
-    img: '/assets/Fotos restaurante individual/Comida Raiz.jpg', 
+    img: '/assets/Fotos restaurante individual/Comida Raiz.jpg',
     imgAlt: '',
     local: 'MG',
   },
@@ -115,9 +115,19 @@ function exibirRestaurantesPagina(pagina) {
 }
 
 function trocarPagina(pagina) {
-  paginaAtual = pagina;
-  exibirRestaurantesPagina(pagina);
+  const numPaginas = Math.ceil(arrayRestaurantes.length / itensPorPagina);
+
+  if (pagina === 'anterior') {
+    paginaAtual = Math.max(paginaAtual - 1, 1);
+  } else if (pagina === 'proxima') {
+    paginaAtual = Math.min(paginaAtual + 1, numPaginas);
+  } else {
+    paginaAtual = pagina;
+  }
+
+  exibirRestaurantesPagina(paginaAtual);
 }
+
 const pagina1Button = document.getElementById('pagina1');
 const pagina2Button = document.getElementById('pagina2');
 
@@ -128,6 +138,18 @@ pagina1Button.addEventListener('click', () => {
 pagina2Button.addEventListener('click', () => {
   trocarPagina(2);
 });
+
+const anteriorButton = document.getElementById('anteriorButton');
+const proximaButton = document.getElementById('proximaButton');
+
+anteriorButton.addEventListener('click', () => {
+  trocarPagina('anterior');
+});
+
+proximaButton.addEventListener('click', () => {
+  trocarPagina('proxima');
+});
+
 
 // Inicialização da página
 exibirRestaurantesPagina(1);

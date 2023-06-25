@@ -51,12 +51,10 @@ function criarRestaurante(restaurante) {
   section.innerHTML = `
     <img class="img-restaurante" src="${restaurante.img}" alt="${restaurante.imgAlt}" />
     <div class="texto-restaurante">
-   
       <h3 class="titulo-restaurante">
         <a href="${restaurante.link}">${restaurante.nome}</a>
       </h3>
       <p class="descricao-restaurante">${restaurante.descricao}</p>
-    
     </div>
   `;
 
@@ -73,11 +71,31 @@ function exibirRestaurantesPagina(pagina) {
 }
 
 function trocarPagina(pagina) {
-  paginaAtual = pagina;
-  exibirRestaurantesPagina(pagina);
+  const numPaginas = Math.ceil(arrayRestaurantes.length / itensPorPagina);
+
+  if (pagina === "anterior") {
+    paginaAtual = Math.max(paginaAtual - 1, 1);
+  } else if (pagina === "proxima") {
+    paginaAtual = Math.min(paginaAtual + 1, numPaginas);
+  } else {
+    paginaAtual = pagina;
+  }
+
+  exibirRestaurantesPagina(paginaAtual);
 }
+
+const anteriorButton = document.getElementById("anteriorButton");
+const proximaButton = document.getElementById("proximaButton");
 const pagina1Button = document.getElementById("pagina1");
 const pagina2Button = document.getElementById("pagina2");
+
+anteriorButton.addEventListener("click", () => {
+  trocarPagina("anterior");
+});
+
+proximaButton.addEventListener("click", () => {
+  trocarPagina("proxima");
+});
 
 pagina1Button.addEventListener("click", () => {
   trocarPagina(1);
