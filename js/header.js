@@ -1,15 +1,13 @@
-//Etapa 1: Criar o elemento Article
+// Etapa 1: Criar o elemento Article
 const cabecalho = document.createElement("article");
 
-//Etapa 2: Manipular o elemento article através do innerHtml
+// Etapa 2: Manipular o elemento article através do innerHtml
 cabecalho.innerHTML = `
 <header class="menu">
   <div class="container">
     <div class="wrapper">
       <figure class="logo">
-        <a href="index.html"
-          ><img src="./assets/img/Roteiro do sabor.png" alt="Logo Roteiro do sabor"
-        /></a>
+        <a href="index.html"><img src="./assets/img/Roteiro do sabor.png" alt="Logo Roteiro do sabor" /></a>
       </figure>
       <nav class="lista-header" id="itens">
         <ul>
@@ -26,15 +24,15 @@ cabecalho.innerHTML = `
     </div>
   </div>
 </header>
- `;
+`;
 
-//Etapa 3: Adicionar o elemento article no elemento main do DOM
+// Etapa 3: Adicionar o elemento article no elemento main do DOM
 const headerElement = document.querySelector("header");
-
 headerElement.appendChild(cabecalho);
 
 function clickMenu() {
-  if (itens.style.display == "block") {
+  const itens = document.getElementById("itens");
+  if (itens.style.display === "block") {
     itens.style.display = "none";
   } else {
     itens.style.display = "block";
