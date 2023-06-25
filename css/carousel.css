@@ -20,6 +20,7 @@
   font-size: 20px;
   line-height: 250px;
   width: 40px;
+  height: 335px;
   color: #fff;
   transition: all 600ms ease-in-out;
   background: linear-gradient(to left, transparent 0%, black 200%);
@@ -44,11 +45,12 @@
   display: flex;
   flex-flow: row nowrap;
   gap: 15px;
+  margin-bottom: 100px;
 }
 
 .item {
-  width: 250px;
-  height: 250px;
+  width: 480px;
+  height: 304px;
   flex-shrink: 0;
   transition: all 600ms ease-in-out;
   opacity: 0.5;
@@ -72,23 +74,35 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
   scrollbar-width: none; /* Firefox */
 }
 
+@media(max-width: 583px){
+  .item {
+    width: 380px;
+    height: 204px;
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+    opacity: 0.5;
+  }
 
-.cyan {
-  background: cyan;
+  .arrow-left,
+.arrow-right {
+  width: 40px;
+  height: 235px;
 }
 
-.deeppink {
-  background: deeppink;
 }
 
-.turquoise {
-  background: turquoise;
-}
+@media(max-width: 460px){
+  .item {
+    width: 180px;
+    height: 104px;
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+    opacity: 0.5;
+  }
 
-.darkblue {
-  background: darkblue;
-}
-
-.purple {
-  background: purple;
+  .arrow-left,
+  .arrow-right {
+    width: 40px;
+    height: 135px;
+  }
 }

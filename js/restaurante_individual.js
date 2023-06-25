@@ -31,7 +31,9 @@ const restaurantes = [
       </section>
     </div>
     `,
-    imagens: ``,
+    imagens: `
+    <img src="./assets/FotosRestauranteIndividual/SaboresDoSertão.jpg" class="imagem1"/>
+    `,
     descricao: `<p>
     O Restaurante <b>Sabores do Sertão</b> é um estabelecimento gastronômico localizado no centro de <b>São Paulo</b>,
     oferecendo aos clientes uma experiência única de culinária tradicional do sertão brasileiro.<br>
@@ -84,6 +86,8 @@ const restaurantes = [
       </section>
     </div>
     `,
+    imagens: `
+    <img src="./assets/FotosRestauranteIndividual/Brasa&Sabor.jpg" class="imagem1"/>`,
     descricao: `<p>
     O Restaurante <b>Brasa & Sabor</b> é um estabelecimento gastronômico localizado no coração de <b>Rio de Janeiro</b>,
     oferecendo aos clientes uma experiência única de culinária com sabores autênticos e pratos grelhados irresistíveis.<br>
@@ -136,6 +140,9 @@ const restaurantes = [
       </section>
     </div>
     `,
+    imagens: `
+    <img src="./assets/FotosRestauranteIndividual/ComidaRaiz.jpg" class="imagem1"/>
+    `,
     descricao: `<p>
     O Restaurante <b>Comida Raiz</b> é um lugar especial localizado no coração de <b>Recife</b>, conhecido por oferecer uma autêntica
     experiência de comida regional. Nosso compromisso é preservar as raízes da culinária brasileira, resgatando receitas tradicionais
@@ -183,6 +190,9 @@ const restaurantes = [
         ></iframe>
       </section>
     </div>
+    `,
+    imagens: `
+    <img src="./assets/FotosRestauranteIndividual/SaborCarioca.jpg" class="imagem1"/>
     `,
     descricao: `<p>
     O Restaurante <b>Sabor Carioca</b> é um verdadeiro tesouro culinário localizado no coração do Rio de Janeiro.
@@ -236,6 +246,9 @@ const restaurantes = [
       </section>
     </div>
     `,
+    imagens: `
+    <img src="./assets/FotosRestauranteIndividual/CozinhaDoBrasil.jpg" class="imagem1"/>
+    `,
     descricao: `<p>
     O Restaurante <b>Cozinha do Brasil</b> é um lugar encantador localizado em um dos bairros mais charmosos de <b>São Paulo</b>.
     Nosso objetivo é proporcionar aos clientes uma verdadeira imersão na culinária brasileira, com pratos que resgatam as tradições
@@ -287,6 +300,9 @@ const restaurantes = [
       </section>
     </div>
     `,
+    imagens: `
+    <img src="./assets/FotosRestauranteIndividual/ComidaDeButeco.jpg" class="imagem1"/>
+    `,
     descricao: `<p>
     O Restaurante <b>Comida de Boteco</b> é um lugar descontraído e acolhedor que celebra a cultura dos botecos brasileiros.
     Localizado no coração de uma das cidades mais vibrantes do país, oferecemos aos nossos clientes uma experiência autêntica
@@ -320,54 +336,54 @@ if (
     }
   })[0];
   console.table(restaurante)
-	// window.location.replace("/");
 	console.log(url.searchParams.get("restaurante"));
 }
 
 document.querySelector('.titulo').innerHTML = restaurante.nome;
 document.querySelector('.texto').innerHTML = restaurante.descricao;
 document.querySelector('.avaliacao-preco-mapa').innerHTML = restaurante.avaliacaoPrecoMapa;
+document.querySelector('.imagens').innerHTML = restaurante.imagens
 
 
 
+// // Criei elemento div para colocar as imagens
+// const divImagens = document.createElement("div");
+// divImagens.classList.add("imagens");
 
-// Criei elemento div para colocar as imagens
-const divImagens = document.createElement("div");
-divImagens.classList.add("imagens");
+// // Coloquei a seleção dos caminhos das imagens
+// const caminhosImagens = [
+// 	"./assets/Fotos restaurante individual/Galinha caipira com quiabo.png",
+// 	"./assets/Fotos restaurante individual/Mungunzá-doce.jpg",
+// 	"./assets/Fotos restaurante individual/Carne de sol com mandioca.png",
+// 	"./assets/Fotos restaurante individual/Pamonha (2).png",
+// 	"./assets/Fotos restaurante individual/Feijoada nordestina.png",
+// 	"./assets/Fotos restaurante individual/Bolo de milho.png",
+// ];
 
-// Coloquei a seleção dos caminhos das imagens
-const caminhosImagens = [
-	"./assets/Fotos restaurante individual/Galinha caipira com quiabo.png",
-	"./assets/Fotos restaurante individual/Mungunzá-doce.jpg",
-	"./assets/Fotos restaurante individual/Carne de sol com mandioca.png",
-	"./assets/Fotos restaurante individual/Pamonha (2).png",
-	"./assets/Fotos restaurante individual/Feijoada nordestina.png",
-	"./assets/Fotos restaurante individual/Bolo de milho.png",
-];
+// // Array dos caminhos
+// for (let i = 0; i < caminhosImagens.length; i++) {
+// 	const caminho = caminhosImagens[i];
 
-// Array dos caminhos
-for (let i = 0; i < caminhosImagens.length; i++) {
-	const caminho = caminhosImagens[i];
+// 	// Criei elemento <img> para cada imagem
+// 	const imagem = document.createElement("img");
+// 	imagem.src = caminho;
 
-	// Criei elemento <img> para cada imagem
-	const imagem = document.createElement("img");
-	imagem.src = caminho;
+// 	// Adicionei a class imagem1 para 3 primeiras fotos e imagem2 para as demais
+// 	if (i < 3) {
+// 		imagem.classList.add("imagem1");
+// 	} else {
+// 		imagem.classList.add("imagem2");
+// 	}
 
-	// Adicionei a class imagem1 para 3 primeiras fotos e imagem2 para as demais
-	if (i < 3) {
-		imagem.classList.add("imagem1");
-	} else {
-		imagem.classList.add("imagem2");
-	}
+// 	// Coloquei a imagem no <div class="imagens">
+// 	divImagens.appendChild(imagem);
+// }
 
-	// Coloquei a imagem no <div class="imagens">
-	divImagens.appendChild(imagem);
-}
+// // Selecionei a parte do título
+// const retangulo = document.querySelector(".retangulo");
 
-// Selecionei a parte do título
-const retangulo = document.querySelector(".retangulo");
+// // Coloquei as imagens abaixo do retangulo(titulo)
+// retangulo.insertAdjacentElement("afterend", divImagens);
 
-// Coloquei as imagens abaixo do retangulo(titulo)
-retangulo.insertAdjacentElement("afterend", divImagens);
 
 

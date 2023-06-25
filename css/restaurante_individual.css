@@ -28,24 +28,15 @@
 
 .imagem1 {
     flex-basis: 33.33%;
-    width: 30%;
-    height: 30%;
+    width: 1246px;
+    height: 1000px;
     padding-top: 400px;
     
 }
   
-.imagem2 {
-    flex-basis: 33.33%;
-    width: 30%;
-    height: 30%;
-    
-}
 
   /* Adicione uma quebra de linha após o terceiro item */
-@media screen and (min-width: 768px) {
-    .imagem1:nth-child(3n+1),
-    .imagem2:nth-child(3n+1) 
-}
+
 
 .container-restaurante {
     display: flex;
@@ -89,10 +80,10 @@ iframe {
     .container-restaurante {
       flex-direction: column;
     }
-  
+
     iframe {
         height: 200px;
-        width: 400px;
+        width: 200px;
     }
 
 }
