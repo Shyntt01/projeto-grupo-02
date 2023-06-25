@@ -17,6 +17,7 @@
     <script src="./js/header.js" defer></script>
     <script src="./js/carousel.js" defer></script>
     <script src="./js/footer.js" defer></script>
+    <script src="./js/index.js" defer></script>
     <title>Roteiro do Sabor</title>
   </head>
   <body>
@@ -38,8 +39,10 @@
             <h1>Explore nossos Restaurantes</h1>
           </div>
           <div class="home-input">
-            <input type="text" placeholder="Digite o nome da receita" />
+            <input type="text" id="pesquisa" placeholder="Digite sua pesquisa">
+            <button class="button-pesquisa-restaurante" onclick="realizarPesquisaRestaurantes()"><img src="./assets/img/loupe_icon-icons.com_58875.png" alt=""></button>
           </div>
+          <div id="resultado"></div>
           <div class="carousel-container">
             <button class="arrow-left control" aria-label="Previous image">◀</button>
             <button class="arrow-right control" aria-label="Next Image">▶</button>
@@ -65,7 +68,9 @@
         <h1>Explore nossas Receitas</h1>
         <div class="home-input">
           <input type="text" placeholder="Digite o nome da receita" />
+          <button class="button-pesquisa-restaurante" onclick="realizarPesquisaReceitas()"><img src="./assets/img/loupe_icon-icons.com_58875.png" alt=""></button>
         </div>
+        <div id="resultado"></div>
         <div class="carousel-container">
           <button class="arrow-left control" aria-label="Previous image">◀</button>
           <button class="arrow-right control" aria-label="Next Image">▶</button>
