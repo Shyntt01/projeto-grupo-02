@@ -1,5 +1,6 @@
 main {
   margin-top: 150px;
+  font-size: 20px;
 }
 
 .filtro ul {
@@ -61,19 +62,20 @@ i {
   font-size: 20px;
 }
 
-.pagination {
+.pagination ul {
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding-top: 70px;
   padding-bottom: 80px;
 }
 .pagination li {
   display: inline-block;
-  margin-right: 30px; /* Espaçamento entre os itens */
 }
 
 section {
   text-align: center;
-  padding-top: 50px;
+
   padding-bottom: 20px;
 }
 

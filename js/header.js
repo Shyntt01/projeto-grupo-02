@@ -11,16 +11,16 @@ cabecalho.innerHTML = `
           ><img src="./assets/img/Roteiro do sabor.png" alt="Logo Roteiro do sabor"
         /></a>
       </figure>
-      <nav class="lista-header">
+      <nav class="lista-header" id="itens">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="restaurante_lista.html">Restaurantes</a></li>
-          <li><a href="receita_lista.html">Receitas</a></li>
-          <li><a href="contato.html">Contato</a></li>
+          <li class="itens-cima"><a href="index.html">Home</a></li>
+          <li class="itens-cima"><a href="restaurante_lista.html">Restaurantes</a></li>
+          <li class="itens-baixo"><a href="receita_lista.html">Receitas</a></li>
+          <li class="itens-baixo"><a href="contato.html">Contato</a></li>
         </ul>
       </nav>
 
-      <a class="menu-mobile">
+      <a class="menu-mobile" onClick="clickMenu()">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
       </a>
     </div>
@@ -32,3 +32,11 @@ cabecalho.innerHTML = `
 const headerElement = document.querySelector("header");
 
 headerElement.appendChild(cabecalho);
+
+function clickMenu() {
+  if (itens.style.display == "block") {
+    itens.style.display = "none";
+  } else {
+    itens.style.display = "block";
+  }
+}

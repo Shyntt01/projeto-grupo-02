@@ -47,7 +47,7 @@ section h2 {
 header figure img {
   width: 150px;
   height: auto;
-  margin-right: 100px;
+  /* margin-right: 100px; */
 }
 
 .lista-header li,
@@ -79,9 +79,42 @@ header figure img {
 .menu-mobile {
   display: none;
 }
+
 @media (max-width: 1000px) {
+  .lista-header ul li a {
+    font-size: 12pt;
+  }
+  .lista-header ul li {
+    padding: 0;
+    margin-top: -8px;
+  }
   .lista-header {
     display: none;
+  }
+
+  .menu {
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+  header {
+    height: 120px;
+    padding-top: 22px;
+  }
+}
+@media (max-width: 640px) {
+  .lista-header {
+    display: none;
+  }
+  .lista-header ul li a {
+    font-size: 10pt;
+  }
+
+  .lista-header {
+  }
+  .lista-header ul li {
+    padding: 0;
   }
   .menu-mobile {
     display: block;
@@ -89,6 +122,37 @@ header figure img {
   header {
     height: 120px;
     padding-top: 22px;
+  }
+  .itens-cima {
+    padding-bottom: -20px;
+  }
+  .itens-baixo a {
+    margin-top: -100px;
+  }
+}
+
+@media (max-width: 538px) {
+  .lista-header {
+    display: none;
+  }
+  .lista-header ul li a {
+    font-size: 10pt;
+  }
+
+  .lista-header {
+  }
+  .lista-header ul li {
+    padding: 0;
+  }
+  .menu-mobile {
+    display: block;
+  }
+
+  .itens-cima {
+    padding-bottom: -20px;
+  }
+  .itens-baixo a {
+    margin-top: -100px;
   }
 }
 nav ul li a:hover {
@@ -106,3 +170,6 @@ nav ul li a:hover {
 }
 
 /* "Aqui comeÃ§a o css da pÃ¡gina index.html" */
+.lista-header {
+  display: flex;
+}
