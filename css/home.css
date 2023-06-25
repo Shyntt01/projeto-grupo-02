@@ -64,7 +64,7 @@
   margin-bottom: 8vh;
 }
 
-.button-pesquisa-restaurante{
+.button-pesquisa-restaurante, .button-pesquisa-receita{
   width: 40px;
   height: 40px;
   border-radius: 0 50px 50px 0;
