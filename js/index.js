@@ -39,14 +39,14 @@ const paginasRestaurante = [
   };
 
 
-  // Lista de restaurantes disponíveis no nosso site
+  // Lista de receitas disponíveis no nosso site
 const paginasReceitas = [
   { titulo: 'Tacacá do Norte', url: '/receita_individual.html?receita=1' },
   { titulo: 'Vatapá', url: '/receita_individual.html?receita=2' },
   { titulo: 'Galinhada', url: '/receita_individual.html?receita=3' },
   { titulo: 'Escondidinho', url: '/receita_individual.html?receita=4' },
   { titulo: 'Moqueca', url: '/receita_individual.html?receita=5' },
-  // Aqui é possivel adiionar mais páginas de restaurantes no nosso site
+  // Aqui é possivel adiionar mais páginas de receitas no nosso site
 ];
 
 function realizarPesquisaReceitas() {
