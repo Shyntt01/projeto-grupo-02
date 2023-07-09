@@ -69,6 +69,13 @@
   scrollbar-width: none; 
 }
 
+.subtitleRestaurant{
+  font-size: 20;
+  font-weight: 600;
+  background-color: #7d1c1c;
+  color: #fff;
+}
+
 @media(max-width: 583px){
   .item {
     width: 380px;
@@ -82,6 +89,11 @@
 .arrow-right {
   width: 40px;
   height: 235px;
+}
+
+.subtitleRestaurant{
+  font-size: 16px;
+  font-weight: 600;
 }
 
 }
@@ -100,4 +112,10 @@
     width: 40px;
     height: 135px;
   }
+
+  .subtitleRestaurant{
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
 }
