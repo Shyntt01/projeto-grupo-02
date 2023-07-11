@@ -10,7 +10,7 @@ cabecalho.innerHTML = `
         <a href="index.html"><img src="./assets/img/Roteiro do sabor.png" alt="Logo Roteiro do sabor" /></a>
       </figure>
       <nav class="lista-header" id="itens">
-        <ul>
+        <ul class="mobile">
           <li class="itens-cima"><a href="index.html">Home</a></li>
           <li class="itens-cima"><a href="restaurante_lista.html">Restaurantes</a></li>
           <li class="itens-baixo"><a href="receita_lista.html">Receitas</a></li>

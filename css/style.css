@@ -26,7 +26,7 @@
 
 header {
   margin: 0 auto;
-  background: rgba(217, 217, 217, 1);
+  background: #d9d9d9;
   position: fixed;
   top: 0;
   width: 100%;
@@ -92,9 +92,6 @@ header figure img {
     display: none;
   }
 
-  .menu {
-  }
-
   .menu-mobile {
     display: block;
   }
@@ -104,15 +101,10 @@ header figure img {
   }
 }
 @media (max-width: 640px) {
-  .lista-header {
-    display: none;
-  }
   .lista-header ul li a {
     font-size: 10pt;
   }
 
-  .lista-header {
-  }
   .lista-header ul li {
     padding: 0;
   }
@@ -137,9 +129,6 @@ header figure img {
   }
   .lista-header ul li a {
     font-size: 10pt;
-  }
-
-  .lista-header {
   }
   .lista-header ul li {
     padding: 0;
@@ -167,9 +156,13 @@ nav ul li a:hover {
   top: 0;
   width: 100%;
   left: 0;
+
 }
 
-/* "Aqui comeÃ§a o css da pÃ¡gina index.html" */
-.lista-header {
-  display: flex;
+@media(max-width: 1000px){
+  .mobile{
+  position: absolute;
+  background: #d9d9d9;
+  top: 100%;
+  }
 }

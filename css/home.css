@@ -89,14 +89,15 @@
   margin-bottom: 5px;
   width: 180px;
   height: 25px;
-  border: #b4b3b3 solid 2px;
-  background-color: #b4b3b3;
+  border: #b4b3b350 solid 2px;
+  background-color: #b4b3b355;
   border-radius: 5px;
   text-align: center;
   
   align-items: center;
   justify-content: center;
 }
+
 /* Responsividade */
 @media (max-width: 768px) {
   .home-input input {
@@ -105,5 +106,11 @@
   }
 }
 
+@media (max-width: 440px) {
+  #initialText{ margin-top: 150px;
+
+  }
+    
+  }
 
 
