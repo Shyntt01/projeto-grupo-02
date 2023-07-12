@@ -90,6 +90,7 @@ header figure img {
   }
   .lista-header {
     display: none;
+      transition:  0.5s;
   }
 
   .menu-mobile {
@@ -156,13 +157,13 @@ nav ul li a:hover {
   top: 0;
   width: 100%;
   left: 0;
-
 }
 
 @media(max-width: 1000px){
   .mobile{
   position: absolute;
-  background: #d9d9d9;
+  background: #d9d9d9f6;
   top: 100%;
+      transition: all 0.5s;
   }
 }

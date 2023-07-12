@@ -96,6 +96,7 @@ main {
 .pagination li {
   display: inline-block;
   margin-right: 10px; /* Espaçamento entre os itens */
+  cursor: pointer;
 }
 
 /* @media (max-width: 768px) {

@@ -52,7 +52,7 @@ const restaurantes = [
 
     Além disso, o restaurante conta com uma carta de vinhos selecionada, que harmoniza perfeitamente com os pratos servidos.
     Para completar a experiência gastronômica, o restaurante oferece sobremesas caseiras irresistíveis, como o delicioso bolo de milho. <br>
-    O Restaurante <b>Sabores do Sertão</b> é mais do que um simples lugar para refeições, é um convite a uma viagem culinária ao sertão brasileiro.
+    O Restaurante <b>Sabores do Sertão</b> é mais do que um simples lugar para refeições, é um convite a uma viagem culinária ao sertão Brasileiro.
   </p>`
 	},
 	{

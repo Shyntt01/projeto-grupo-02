@@ -73,6 +73,7 @@ i {
 }
 .pagination li {
   display: inline-block;
+  cursor: pointer;
 }
 
 section {

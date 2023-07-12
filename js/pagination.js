@@ -77,16 +77,31 @@ function exibirRestaurantesPagina(pagina) {
 function trocarPagina(pagina) {
   const numPaginas = Math.ceil(arrayRestaurantes.length / itensPorPagina);
 
-  if (pagina === "anterior") {
+  if (pagina === 'anterior') {
     paginaAtual = Math.max(paginaAtual - 1, 1);
-  } else if (pagina === "proxima") {
+  } else if (pagina === 'proxima') {
     paginaAtual = Math.min(paginaAtual + 1, numPaginas);
   } else {
     paginaAtual = pagina;
   }
 
   exibirRestaurantesPagina(paginaAtual);
+  
+  // Role suavemente para o topo da página
+  scrollToTop();
 }
+
+function scrollToTop() {
+  // Obtenha a posição atual da rolagem
+  const currentPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+
+  if (currentPosition > 0) {
+    // Role suavemente para o topo
+    window.requestAnimationFrame(scrollToTop);
+    window.scrollTo(0, currentPosition - currentPosition / 10);
+  }
+}
+
 
 const anteriorButton = document.getElementById("anteriorButton");
 const proximaButton = document.getElementById("proximaButton");

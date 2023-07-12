@@ -126,7 +126,19 @@ function trocarPagina(pagina) {
   }
 
   exibirRestaurantesPagina(paginaAtual);
+  
+  scrollToTop();
 }
+
+function scrollToTop() {
+  const currentPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+
+  if (currentPosition > 0) {
+    window.requestAnimationFrame(scrollToTop);
+    window.scrollTo(0, currentPosition - currentPosition / 10);
+  }
+}
+
 
 const pagina1Button = document.getElementById('pagina1');
 const pagina2Button = document.getElementById('pagina2');
