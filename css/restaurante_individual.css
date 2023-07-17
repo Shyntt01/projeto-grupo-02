@@ -1,100 +1,93 @@
-
 .retangulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    padding-top: 120px;
-    width: 100%;
-    height: 400px;
-    left: 0px;
-    top: 0px;
-    right: 0px;
-    background: #7D1C1C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding-top: 120px;
+  width: 100%;
+  height: 400px;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  background: #7d1c1c;
 }
 
 .titulo {
-    color: #fff;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 61px;  
+  color: #fff;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 61px;
 }
-  
+
 .imagens {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .imagem1 {
-    flex-basis: 3.33%;
-    width: 100%;
-    height: 100%;
-    padding-top: 400px;
-    
+  flex-basis: 3.33%;
+  width: 100%;
+  height: 100%;
+  padding-top: 400px;
 }
-  
 
-  /* Adicione uma quebra de linha após o terceiro item */
-
+/* Adicione uma quebra de linha após o terceiro item */
 
 .container-restaurante {
-    display: flex;
-  }
-  
-.texto {
-    flex: 1;
-    padding-top: 30px;
-    text-align: left;
-    margin-left: 70px;
-    margin-right: 100px;
-    margin-bottom: 30px;
-    max-width: 1024px;
-    overflow: auto;
+  display: flex;
 }
-  
-  
+
+.texto {
+  flex: 1;
+  padding-top: 30px;
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  max-width: 1024px;
+  overflow: auto;
+}
+
 .avaliacao-preco-mapa {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 100px;
 }
 
 .avaliacao {
-    margin-top: 30px;
-    margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
-  
-.mapa {
-    margin-top: 10px;
 
+.mapa {
+  margin-top: 10px;
 }
 
 iframe {
-    height: 280px;
-    width: 500px;
+  height: 280px;
+  width: 500px;
 }
 
-@media (max-width: 768px) {
-    .container-restaurante {
-      flex-direction: column;
-    }
+@media (max-width: 1000px) {
+  .container-restaurante {
+    flex-direction: column;
+  }
 
-    iframe {
-        height: 200px;
-        width: 200px;
-    }
+  iframe {
+    height: 200px;
+    width: 78vw;
+  }
 }
 
 @media (max-width: 450px) {
-    .texto {
-        text-align: left;
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-    .avaliacao-preco-mapa {
-        margin-left: 40px;
-
-}
+  .texto {
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .avaliacao-preco-mapa {
+    margin-left: 30px;
+  }
 }
